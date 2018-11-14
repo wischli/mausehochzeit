@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './images/forest.jpg';
+import sunday from './fonts/sunday.ttf';
+import LaserMetal from './fonts/LaserMetal.ttf';
 import './App.css';
 
 class App extends Component {
@@ -7,19 +9,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          Mausehochzeit incoming
+        <div class="wrapper">
+        <img src={logo} className="App-logo" width="100%" height="100%" alt="logo" />
+        <div class="overlay">
+          <h1>Mausehochzeit</h1>
+          <h2>Save the Date: 31.08.2019</h2>
+        </div>
+        </div>
         </header>
       </div>
     );
