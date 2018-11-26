@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/js/runtime~main.211cfd54.js"
   },
   {
-    "revision": "931d88b5cc4dc0f64a31",
-    "url": "/mausehochzeit/static/js/main.931d88b5.chunk.js"
+    "revision": "b6b88725efa417f11159",
+    "url": "/mausehochzeit/static/js/main.b6b88725.chunk.js"
   },
   {
-    "revision": "a3ab4472f0a878a91fa6",
-    "url": "/mausehochzeit/static/js/1.a3ab4472.chunk.js"
+    "revision": "9a29eb8aed5d6d360759",
+    "url": "/mausehochzeit/static/js/1.9a29eb8a.chunk.js"
   },
   {
-    "revision": "931d88b5cc4dc0f64a31",
+    "revision": "b6b88725efa417f11159",
     "url": "/mausehochzeit/static/css/main.cadafc88.chunk.css"
   },
   {
-    "revision": "a0e2bbed83b6e0151c001d87546a813d",
+    "revision": "0b550e6c548d3c0a7d3980fcdb2cc2e8",
     "url": "/mausehochzeit/index.html"
   }
 ];
