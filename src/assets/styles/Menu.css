@@ -25,16 +25,35 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 34px;
-  height: 28px;
-  left: 26px;
-  top: 26px;
+  width: 30px;
+  height: 24px;
+  left: 16px;
+  top: 16px;
   border-color: white !important;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: white;
+}
+
+.bm-burger-bars:first-of-type {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.bm-burger-bars:nth-of-type(3) {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bm-burger-bars:first-of-type,
+.bm-burger-bars:nth-of-type(3) {
+  background: #cbfefb !important;
+}
+
+.bm-burger-bars:nth-of-type(2) {
+  border-radius: 100%;
 }
 
 /* Position and sizing of clickable cross button */
@@ -53,6 +72,9 @@
   background: #373a47;
   padding: 40px 0;
   font-size: 1.15em;
+  background: linear-gradient(180deg,#344642 42px, rgb(69, 93, 89) 42px, #415652 113px, #5b7a75 113px, #577b6f 184px, #629788 184px, #629788 257px, #62a592 257px, #62a592 329px, #69b19d 329px, #e5edeb);
+  /* background: linear-gradient(180deg, #629788, #f4f5f5); */
+  box-shadow: 1px 1px 10px 0px #ffffffb0;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -74,6 +96,9 @@
 }
 
 .menu-item {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: unset !important;
   align-items: center;
   color: white;
   cursor: pointer;

@@ -1,4 +1,4 @@
-import { push as Menu } from 'react-burger-menu';
+import { stack as Menu } from 'react-burger-menu';
 import React, { Component } from 'react';
 
 // export default props => {
@@ -42,6 +42,14 @@ class Example extends React.Component {
 
         <a className="menu-item" href="/desserts">
           Kevin Olaf
+        </a>
+
+        <a className="menu-item" href="/desserts">
+          Nummer 5
+        </a>
+
+        <a className="menu-item" href="/desserts">
+          Nummer 6
         </a>
       </Menu>
     );

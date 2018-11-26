@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div id="outer-container" className="App">
-        <Menu isOpen id={ "sidebar" } className={ "my-menu" }pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } width={ 300 }/>
+        <Menu isOpen={ true } id={ "sidebar" } className={ "my-menu" }pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } width={ 300 }/>
         <main id="page-wrap">
           <header className="App-header">
             <div className="wrapper">
