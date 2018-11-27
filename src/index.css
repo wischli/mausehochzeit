@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('./fonts/ShadowsIntoLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
   margin: 0;

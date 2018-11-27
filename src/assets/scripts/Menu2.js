@@ -1,5 +1,6 @@
 import { stack as Menu } from 'react-burger-menu';
 import React, { Component } from 'react';
+import icon from '../../images/mouse-black-animal.svg';
 
 // export default props => {
 //   return (
@@ -24,10 +25,10 @@ import React, { Component } from 'react';
 //   );
 // };
 
-class Example extends React.Component {
+class MyMenu extends React.Component {
   render () {
     return (
-      <Menu>
+      <Menu isOpen={ true } customBurgerIcon={ <img src={icon} /> } pageWrapId={ "menuPageWrap" } outerContainerId={ "menuOuterContainer" }>
         <a className="menu-item" href="/">
           Wichtigste Fakten
         </a>
@@ -56,4 +57,4 @@ class Example extends React.Component {
   }
 }
 
-export default Example;
+export default MyMenu;

@@ -1,14 +1,27 @@
 html {
-    /* background-color: #4a5f5b; */
-    /* background-color: #d4e9ea; */
-  color: white;
-    /* background: linear-gradient(90deg, #01a486 0, rgba(230, 230, 230, 0.4)); */
+  /* background-color: #4a5f5b; */
+  /* background-color: #d4e9ea; */
+  /* background: linear-gradient(90deg, #01a486 0, rgba(230, 230, 230, 0.4)); */
   /* background: -webkit-gradient(linear, left top, right bottom, from(#00503d), to(#ffffff)) fixed; */
-  background: -webkit-repeating-radial-gradient(top left, circle, #a3c1b7, #f5f5f5 57%, #a3c1b7 103%) fixed}
-
-body {
-  min-height: 100000px;
+  /* background: -webkit-repeating-radial-gradient(top left, circle, #a3c1b7, #f5f5f5 43%, #a3c1b7 73%) fixed; */
+  background: -webkit-repeating-linear-gradient(164deg, #a3c1b7, #f5f5f5 500px, #a3c1b7 1000px);
+  /* background:
+    linear-gradient(90deg, #629788, rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, #c0ded9, rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgb(69, 93, 89), rgba(0,0,255,0) 70.71%); */
+  color: white;
+  /* background: -webkit-repeating-radial-gradient(top left, circle, #a3c1b7, #f5f5f5 57%, #a3c1b7 103%) fixed; */
+  /* background-attachment: fixed; */
 }
+
+.test {
+  position: absolute;
+  top: 2000px;
+}
+
+  body {
+    min-height: 100000px;
+  }
 
 .App-logo {
   /* animation: App-logo-spin infinite 20s linear; */

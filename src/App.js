@@ -5,13 +5,18 @@ import './assets/styles/Menu.css';
 import Button from '@material-ui/core/Button';
 // import Menu from './assets/Menu';
 import Menu from './assets/scripts/Menu2';
+import Expire from './assets/scripts/Expire';
+import Zoom from 'react-reveal/Zoom';
 
 class App extends Component {
   render() {
     return (
-      <div id="outer-container" className="App">
-        <Menu isOpen={ true } id={ "sidebar" } className={ "my-menu" }pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } width={ 300 }/>
-        <main id="page-wrap">
+      <div id="menuOuterContainer" className="App">
+        <Expire delayShow={10000} delayHide={20000}>
+          <div className="button-text"><span className="button-text-inner">Mau! Drück mich</span></div>
+        </Expire>
+        <Menu />
+        <main id="menuPageWrap">
           <header className="App-header">
             <div className="wrapper">
               <img src={logo} className="App-logo" width="100%" height="100%" alt="logo" />
@@ -21,6 +26,106 @@ class App extends Component {
               </div>
             </div>
           </header>
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd
+          weqwdqwdqwdqwdwqdqwdwqdqwd          weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+                    weqwdqwdqwdqwdwqdqwdwqdqwd
+
+          <Zoom>
+           <div className="test">weqwdqwdqwdqwdwqdqwdwqdqwd wq dqwdwqdq wdqwd qwdwq dwqd qwdfewfewfweq</div>
+          </Zoom>
         </main>
       </div>
     );

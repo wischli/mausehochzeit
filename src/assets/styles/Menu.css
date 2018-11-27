@@ -27,9 +27,25 @@
   position: fixed;
   width: 30px;
   height: 24px;
-  left: 16px;
-  top: 16px;
-  border-color: white !important;
+  /* left: 16px;
+  top: 16px; */
+  /* border: 5px solid #40564f;
+  background-color: #40564f;
+  border-radius: 13px; */
+  right: 8px;
+  top: 8px;
+  border: 9px solid #40564f;
+  background-color: #40564f;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px #344642;
+}
+
+.bm-icon {
+  width: 39px !important;
+  height: 39px !important;
+  position: relative;
+  left: -4px;
+  top: -8px;
 }
 
 /* Color/shape of burger icon bars */
@@ -77,6 +93,11 @@
   box-shadow: 1px 1px 10px 0px #ffffffb0;
 }
 
+/* .bm-menu-wrap,
+.bm-item {
+  transition: transform 0.6s cubic-bezier(0.7, 0, 0.3, 1) 0s !important;
+} */
+
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #373a47;
@@ -109,15 +130,15 @@
   text-align: center;
 }
 
-.menu-item .active {
+/* .menu-item .active {
   box-shadow: 0 2px 3px hsla(0, 0, 0, 0.7);
-}
+} */
 
-.menu-item:nth-of-type(1) {
+/* .menu-item:nth-of-type(1) {
   background: rgb(1, 164, 134, 1);
-}
+} */
 
-.menu-item:nth-of-type(2) {
+/* .menu-item:nth-of-type(2) {
   background: rgba(1, 164, 134, 0.8);
 }
 
@@ -131,9 +152,9 @@
 
 .menu-item:nth-of-type(5) {
     background: rgba(1, 164, 134, 0.2);
-}
+} */
 
-.menu-item--active {
+/* .menu-item--active {
   background: #61dafb;
   border-radius: 2px !important;
   box-shadow: 0 0px 50px hsla(0, 0, 0, 0.5);
@@ -141,6 +162,55 @@
   padding: 0 7px;
   position: absolute;
   transform: translateX(-50%);
-  transition: all 300ms;
+  transition: all 100ms;
   z-index: -1;
+} */
+
+.button-text {
+  position: fixed;
+  right: 65px;
+  top: 29px;
+  z-index: 100000;
+  width: 73px;
+  display: flex;
+  background-color: #40564fcc;
+  padding: 5px 0;
+  border-radius: 87px;
+  font-family: 'Shadows Into Light', cursive;
+  line-height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 130%;
+  transition: opacity 3s linear;
 }
+
+.button-text:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 32%;
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+  border-left-color: #40564fcc;
+  border-right: 0;
+  border-top: 0;
+  margin-top: -2px;
+  margin-right: -12px;
+  transform: rotate(-8deg);
+  display: flex;
+}
+
+/* .one-word-per-line {
+    word-spacing: <parent-width>;
+} */
+
+.button-text-inner {
+   width: min-intrinsic;
+   width: -webkit-min-content;
+   width: -moz-min-content;
+   width: min-content;
+   display: table-caption;
+   display: -ms-grid;
+   -ms-grid-columns: min-content;
+ }
