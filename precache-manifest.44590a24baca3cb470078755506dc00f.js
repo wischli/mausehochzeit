@@ -4,6 +4,10 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/media/sunday.565eef62.ttf"
   },
   {
+    "revision": "8c93fd97b714f2d044175096c661db03",
+    "url": "/mausehochzeit/static/media/mouse-black-animal.8c93fd97.svg"
+  },
+  {
     "revision": "ee60a466a1a17cd4c17b1b8036fe96aa",
     "url": "/mausehochzeit/static/media/forest.ee60a466.jpg"
   },
@@ -16,19 +20,19 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/js/runtime~main.211cfd54.js"
   },
   {
-    "revision": "cda43fd61209863a29d8",
-    "url": "/mausehochzeit/static/js/main.cda43fd6.chunk.js"
+    "revision": "92f724937526d16591ec",
+    "url": "/mausehochzeit/static/js/main.92f72493.chunk.js"
   },
   {
-    "revision": "9a29eb8aed5d6d360759",
-    "url": "/mausehochzeit/static/js/1.9a29eb8a.chunk.js"
+    "revision": "cd4ce4ed4ebd1acaf613",
+    "url": "/mausehochzeit/static/js/1.cd4ce4ed.chunk.js"
   },
   {
-    "revision": "cda43fd61209863a29d8",
-    "url": "/mausehochzeit/static/css/main.e41cbc42.chunk.css"
+    "revision": "92f724937526d16591ec",
+    "url": "/mausehochzeit/static/css/main.cff5b4ae.chunk.css"
   },
   {
-    "revision": "77b40182eca9c309a441a26a156f1216",
+    "revision": "cb908d742d37d5b778e8661859142143",
     "url": "/mausehochzeit/index.html"
   }
 ];
