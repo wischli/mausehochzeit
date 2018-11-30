@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/mausehochzeit/precache-manifest.d2c7c7835b85117d163badf27701208a.js"
+  "/mausehochzeit/precache-manifest.ae5707f87258a85305481e689f5d048d.js"
 );
 
 workbox.clientsClaim();
