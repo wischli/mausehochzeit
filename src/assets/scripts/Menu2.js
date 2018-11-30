@@ -1,57 +1,75 @@
 import { stack as Menu } from 'react-burger-menu';
-import React, { Component } from 'react';
+import React from 'react';
 import icon from '../../images/mouse-black-animal.svg';
-
-// export default props => {
-//   return (
-//     // Pass on our props
-//     <Menu {...props}>
-//       <a className="menu-item" href="/">
-//         Wichtigste Fakten
-//       </a>
-//
-//       <a className="menu-item" href="/burgers">
-//         Anfahrt
-//       </a>
-//
-//       <a className="menu-item" href="/pizzas">
-//         Was ist zu beachten?
-//       </a>
-//
-//       <a className="menu-item" href="/desserts">
-//         Kevin Olaf
-//       </a>
-//     </Menu>
-//   );
-// };
+import '../styles/Menu.css';
+import "./Test.css";
+import { Favorite, Pets, Schedule, Call, Format_list_numbered, Place, Smoke_free } from '@material-ui/icons';
 
 class MyMenu extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      menuItems : [],
+      isOpen : false,
+    };
+  }
+  componentDidMount(){
+      this.setState({
+        menuItems : [
+          {
+            href : '#',
+            title : 'Wichtigste Fakten'
+          },
+          {
+            href : '#',
+            title : 'Was ist zu beachten?'
+          },
+          {
+            href : '#',
+            title : 'Kevin Olaf'
+          },
+          {
+            href : '#',
+            title : 'Platzhalter #5'
+          },
+          {
+            href : '#',
+            title : 'Platzhalter #6'
+          },
+          {
+            href : '#',
+            title : 'Platzhalter #7'
+          },
+        ],
+        isOpen : false,
+      });
+  }
+
+  renderMenuItems = (state) => {
+    return this.state.menuItems.map(item => {
+      return <a className="menu-item" key={item.title} href={item.href}><Favorite />{item.title}</a>;
+    });
+  };
+
+  isMenuOpen = (state) => {
+    const stateIsOpen = this.state.isOpen;
+    this.setState({
+      isOpen: !stateIsOpen,
+    });
+    return state.isOpen;
+  }
+
   render () {
     return (
-      <Menu isOpen={ true } customBurgerIcon={ <img src={icon} /> } pageWrapId={ "menuPageWrap" } outerContainerId={ "menuOuterContainer" }>
-        <a className="menu-item" href="/">
-          Wichtigste Fakten
-        </a>
-
-        <a className="menu-item" href="/burgers">
-          Anfahrt
-        </a>
-
-        <a className="menu-item" href="/pizzas">
-          Was ist zu beachten?
-        </a>
-
-        <a className="menu-item" href="/desserts">
-          Kevin Olaf
-        </a>
-
-        <a className="menu-item" href="/desserts">
-          Nummer 5
-        </a>
-
-        <a className="menu-item" href="/desserts">
-          Nummer 6
-        </a>
+      <Menu
+        onStateChange={ this.isMenuOpen }
+        onClick={ "" }
+        customBurgerIcon={ <img src={icon} alt="Menu" /> }
+        burgerButtonClassName={ this.state.isOpen ? 'menuOpen' : '' }
+        pageWrapId={ "menuPageWrap" }
+        outerContainerId={ "menuOuterContainer" }>
+          {this.renderMenuItems()}
+          <div className="menu-header">Menu</div>
       </Menu>
     );
   }

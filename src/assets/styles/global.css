@@ -12,11 +12,40 @@ html {
   color: white;
   /* background: -webkit-repeating-radial-gradient(top left, circle, #a3c1b7, #f5f5f5 57%, #a3c1b7 103%) fixed; */
   /* background-attachment: fixed; */
+  font-weight: 100;
+}
+
+a:not(.bm-item) {
+  text-decoration: none;
+  color: #c1819f;
+  font-weight: 600;
+}
+
+a:not(.bm-item):hover {
+  border-bottom: 2px solid #c1819f;
+}
+
+button > span {
+  color: #678982;
+}
+
+.MuiCardContent-root-131 {
+  padding-top: 0 !important;
 }
 
 .test {
   position: absolute;
   top: 2000px;
+}
+
+.mobileImage {
+  width: 1000px;
+  overflow: hidden;
+  margin:0;
+}
+
+img {
+  max-width: 100%;
 }
 
   body {
@@ -97,8 +126,9 @@ h1 {
     color: darken(white, 15%);
     text-decoration: none;
   }
+}
 
-  a:hover {
-    border-bottom: 1px solid lighten(white, 15%);
-  }
+.MuiList-root-139,
+nav.Directions-root-6 {
+  box-shadow: 1px 1px 4px 0px #00000052;
 }

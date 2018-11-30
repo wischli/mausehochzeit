@@ -1,158 +1,39 @@
 import React, { Component } from 'react';
-import logo from './images/forest.jpg';
 import './App.css';
 import './assets/styles/Menu.css';
-import Button from '@material-ui/core/Button';
+import './assets/styles/cards.css';
+// import Button from '@material-ui/core/Button';
 // import Menu from './assets/Menu';
 import Menu from './assets/scripts/Menu2';
 import Expire from './assets/scripts/Expire';
 import Zoom from 'react-reveal/Zoom';
+import Header from './assets/scripts/Header'
+import Directions from './assets/scripts/Directions'
+import ColorExample from './assets/scripts/ColorExample'
+// import SimpleMap from './assets/scripts/SimpleMap'
 
 class App extends Component {
   render() {
     return (
       <div id="menuOuterContainer" className="App">
-        <Expire delayShow={10000} delayHide={20000}>
-          <div className="button-text"><span className="button-text-inner">Mau! Drück mich</span></div>
+        <Expire delayShow={2000} delayHide={10000}>
+          <Zoom>
+            <div className="button-text"><span className="button-text-inner">Mau! Drück mich</span></div>
+          </Zoom>
         </Expire>
         <Menu />
         <main id="menuPageWrap">
-          <header className="App-header">
-            <div className="wrapper">
-              <img src={logo} className="App-logo" width="100%" height="100%" alt="logo" />
-              <div className="overlay">
-                <h1>Mausehochzeit</h1>
-                <h2>Save the Date: 24.08.2019</h2>
-              </div>
-            </div>
-          </header>
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd
-          weqwdqwdqwdqwdwqdqwdwqdqwd          weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-                    weqwdqwdqwdqwdwqdqwdwqdqwd
-
+          <Header />
+          <div className="my-cards">
+            <Directions />
+            <ColorExample />
+          </div>
           <Zoom>
-           <div className="test">weqwdqwdqwdqwdwqdqwdwqdqwd wq dqwdwqdq wdqwd qwdwq dwqd qwdfewfewfweq</div>
           </Zoom>
         </main>
       </div>
     );
   }
 }
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <Menu />
-//           <div className="wrapper">
-//             <img src={logo} className="App-logo" width="100%" height="100%" alt="logo" />
-//             <div className="overlay">
-//               <h1>Mausehochzeit</h1>
-//               <h2>Save the Date: 31.08.2019</h2>
-//             </div>
-//           </div>
-//         </header>
-//         <div id="root"></div>
-//         <Button variant="contained" color="primary">
-//           Hello World
-//         </Button>
-//       </div>
-//     );
-//   }
-// }
 
 export default App;

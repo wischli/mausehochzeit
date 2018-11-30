@@ -1,3 +1,4 @@
+
 #page-wrap {
   text-align: center;
 
@@ -38,13 +39,28 @@
   background-color: #40564f;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 1px #344642;
+  transition: ease-in-out 1s all;
+}
+
+.bm-burger-button.menuOpen {
+  transform: rotate(1080deg);
+  background: #00251f;
+  border: 9px solid #00251f;
+  box-shadow: 0px 0px 10px 1px #eaf1ef;
+}
+
+.menu-header {
+  position: absolute;
+  left: 43%;
+  top: 7px;
+  font-size: 80%;
 }
 
 .bm-icon {
   width: 39px !important;
   height: 39px !important;
   position: relative;
-  left: -4px;
+  left: 0;
   top: -8px;
 }
 
@@ -91,6 +107,7 @@
   background: linear-gradient(180deg,#344642 42px, rgb(69, 93, 89) 42px, #415652 113px, #5b7a75 113px, #577b6f 184px, #629788 184px, #629788 257px, #62a592 257px, #62a592 329px, #69b19d 329px, #e5edeb);
   /* background: linear-gradient(180deg, #629788, #f4f5f5); */
   box-shadow: 1px 1px 10px 0px #ffffffb0;
+  overflow: hidden !important;
 }
 
 /* .bm-menu-wrap,
