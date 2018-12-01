@@ -7,6 +7,8 @@
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: black;
 }
 
 .my-cards > div {
@@ -190,4 +192,51 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background: black;
+}
+
+.welcome-2 {
+  margin: 10px 0;
+}
+
+.MuiListItemIcon-root-273 {
+  background: #eef6f2;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.dosDonts {
+  display: flex;
+}
+
+.leftSide,
+.rightSide {
+  width: 47%;
+}
+
+.leftSide {
+  padding-right: 3%;
+}
+
+.rightSide {
+  padding-left: 3%;
+}
+
+.leftSide > ul,
+.rightSide > ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.leftSide > ul > li,
+.rightSide > ul > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.leftSide > svg
+.rightSide > svg {
+  align-self: flex-start;
 }

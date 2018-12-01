@@ -7,9 +7,14 @@ import './assets/styles/cards.css';
 import Menu from './assets/scripts/Menu2';
 import Expire from './assets/scripts/Expire';
 import Zoom from 'react-reveal/Zoom';
-import Header from './assets/scripts/Header'
-import Directions from './assets/scripts/Directions'
-import ColorExample from './assets/scripts/ColorExample'
+import Header from './assets/scripts/Header';
+import Directions from './assets/scripts/Directions';
+import ColorExample from './assets/scripts/ColorExample';
+import Welcome from './assets/scripts/Welcome';
+import Party from './assets/scripts/Party';
+import DosDonts from './assets/scripts/DosDonts';
+
+
 // import SimpleMap from './assets/scripts/SimpleMap'
 
 class App extends Component {
@@ -25,6 +30,9 @@ class App extends Component {
         <main id="menuPageWrap">
           <Header />
           <div className="my-cards">
+            <Welcome />
+            <Party />
+            <DosDonts />
             <Directions />
             <ColorExample />
           </div>

@@ -4,36 +4,27 @@ import { withStyles } from '@material-ui/core/styles';
 import classnames from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import Button from '@material-ui/core/Button';
-import { BrowserView, MobileView } from "react-device-detect";
-import scheuneBuckow from '../../images/StadtscheuneBuckow.webp';
-import scheuneBuckow2 from '../../images/StadtscheuneBuckow2.webp';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+import ListItemText   from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 
-
-
-
-import { LocalParking, Train, LocationOn, TimeToLeave } from '@material-ui/icons';
+import { LooksOne, LooksTwo, Looks3, Looks4, Looks5, Looks6, MusicNote, Pets, BatteryChargingFull } from '@material-ui/icons';
 
 const styles = theme => ({
   card: {
-    maxWidth: 1000,
     margin: 10,
-    [theme.breakpoints.up('lg')]: {
-      width: 1000,
-    },
   },
   media: {
     height: 0,
@@ -55,13 +46,9 @@ const styles = theme => ({
   expandOpen: {
     transform: 'rotate(180deg)',
   },
-  root: {
-    width: '100%',
-    backgroundColor: theme.palette.background.paper,
-  },
 });
 
-class Directions extends React.Component {
+class Party extends React.Component {
   state = { expanded: false };
 
   handleExpandClick = () => {
@@ -74,23 +61,22 @@ class Directions extends React.Component {
       <div>
         <Card className={classes.card}>
           <CardHeader
-            title="Die Hochzeitslocation"
-            subheader="Stadtscheune Buckow (Märkische Schweiz)"
+            title="Wie wird gefeiert?"
+            subheader=""
           />
-          <BrowserView viewClassName="smaller-image"><img src={scheuneBuckow2} className="imageHeader"/></BrowserView>
-          <MobileView><img src={scheuneBuckow} /></MobileView>
           <CardContent>
-            <Typography>
-            Wir verbringen den gesamten Hochzeitstag auf dem schönen Gelände der Stadtscheune Buckow. Hier findet sowohl die freie Trauung, als auch die feuchtfröhliche Feier im Anschluss statt. Die Fahrtzeit beträgt bei Anreise mit Auto etwa 1h und mit den Öffentlichen etwa 1,5h.
-            </Typography>
+            <div class="Party-card">
+              <div class="Party-1">
+                Unsere Hochzeit soll im Stil von Wald, Natur und Shabby Chic sein.
+                Also da, wo sich Kleintiere am wohlsten fühlen.
+                Daher würden wir uns über jegliche Einflüsse, Mitbringsel und Co. in dieser Richtung freuen.
+              </div>
+              <div class="Party-2">
+                Lasst uns einen entspannten Tag miteinander verbringen!
+              </div>
+            </div>
           </CardContent>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9699.399298433606!2d14.072156!3d52.572327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef75d65cbafa2407!2sStadtscheune+Buckow!5e0!3m2!1sen!2sde!4v1543577150211" width="100%" height="100" frameborder="0" allowfullscreen></iframe>
           <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to favorites">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton aria-label="Share">
-            </IconButton>
             <IconButton
               className={classnames(classes.expand, {
                 [classes.expandOpen]: this.state.expanded,
@@ -101,50 +87,73 @@ class Directions extends React.Component {
             >
             { !this.state.expanded ?
             <Button size="small" color="primary">
-              Zeige mir weitere Infos
+              Der grobe Ablauf
             </Button> : ''}
               <ExpandMoreIcon />
             </IconButton>
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
             <CardContent>
-            <h2>Die wichtigsten Infos zur Anreise</h2>
-            <List component="nav" className={classes.root}>
-                <ListItem button>
-                  <ListItemIcon>
-                    <LocationOn />
-                  </ListItemIcon>
-                  <ListItemText primary="Am Schlosspark 3, 15377 Buckow" />
-                </ListItem>
-                <Divider />
+              <h2>Der grobe Ablauf</h2>
+              <List component="nav" className={classes.root}>
                 <ListItem button divider>
                   <ListItemIcon>
-                    <LocalParking />
+                    <LooksOne />
                   </ListItemIcon>
-                  <ListItemText primary="Genügend direkte Parkplätze vorhanden" />
+                  <ListItemText primary="Freie Trauung (ca. 11 Uhr)" />
                 </ListItem>
-                <ListItem button>
+                <ListItem button divider>
                   <ListItemIcon>
-                    <TimeToLeave />
+                    <LooksTwo />
+                  </ListItemIcon>
+                  <ListItemText primary="Anstoßen unter Freudentränen" />
+                </ListItem>
+                <ListItem button divider>
+                  <ListItemIcon>
+                    <Looks3 />
                   </ListItemIcon>
                   <ListItemText>
-                  <div className="space-between">
-                  Dauer: Etwa 50min
-                  <a href="https://www.google.com/maps/dir//52.572327,14.072156/@52.572327,14.072156,14z?hl=de-DE">hier Route berechnen</a>
-                  </div>
+                    Zeit für Fotos
                   </ListItemText>
                 </ListItem>
-                <Divider light />
-                <ListItem button>
+                <ListItem button divider>
                   <ListItemIcon>
-                    <Train />
+                    <Looks4 />
                   </ListItemIcon>
                   <ListItemText>
-                  <div className="space-between">
-                    Dauer: Etwa 90min
-                    <a href="https://www.google.com/maps/dir//52.572327,14.072156/@52.5723334,14.0677786,16z/data=!3m1!4b1!4m2!4m1!3e3?hl=de-DE">hier Route berechnen</a>
-                  </div>
-                  <span className="text-grey">Regio RB26 bis Müncheberg, dann Bus 928 bis Buckow</span>
+                    Kaffeetrinken
+                  </ListItemText>
+                </ListItem>
+                <ListItem button divider>
+                  <ListItemIcon>
+                    <Looks5 />
+                  </ListItemIcon>
+                  <ListItemText>
+                    Zeit für Programm
+                  </ListItemText>
+                </ListItem>
+                <ListItem button divider>
+                  <ListItemIcon>
+                    <MusicNote />
+                  </ListItemIcon>
+                  <ListItemText>
+                    (Livemusik)
+                  </ListItemText>
+                </ListItem>
+                <ListItem button divider>
+                  <ListItemIcon>
+                  <BatteryChargingFull/>
+                  </ListItemIcon>
+                  <ListItemText>
+                    Abendessen
+                  </ListItemText>
+                </ListItem>
+                <ListItem button>
+                  <ListItemIcon>
+                    <Pets />
+                  </ListItemIcon>
+                  <ListItemText>
+                    Partyyyyyyy
                   </ListItemText>
                 </ListItem>
               </List>
@@ -156,9 +165,9 @@ class Directions extends React.Component {
   }
 }
 
-Directions.propTypes = {
+Party.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
 
-export default withStyles(styles)(Directions);
+export default withStyles(styles)(Party);
