@@ -65,13 +65,13 @@ class Party extends React.Component {
             subheader=""
           />
           <CardContent>
-            <div class="Party-card">
-              <div class="Party-1">
+            <div className="Party-card">
+              <div className="Party-1">
                 Unsere Hochzeit soll im Stil von Wald, Natur und Shabby Chic sein.
                 Also da, wo sich Kleintiere am wohlsten fühlen.
                 Daher würden wir uns über jegliche Einflüsse, Mitbringsel und Co. in dieser Richtung freuen.
               </div>
-              <div class="Party-2">
+              <div className="Party-2">
                 Lasst uns einen entspannten Tag miteinander verbringen!
               </div>
             </div>

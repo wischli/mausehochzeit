@@ -210,7 +210,7 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
 
 .leftSide,
 .rightSide {
-  width: 47%;
+  width: 100%;
 }
 
 .leftSide {
@@ -236,7 +236,34 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   text-align: center;
 }
 
-.leftSide > svg
+.leftSide > svg,
 .rightSide > svg {
   align-self: flex-start;
+}
+
+.leftSide {
+  color: #02c38f;
+}
+
+.rightSide {
+  color: #cb5f00;
+}
+
+.leftSide > ul > li > span.text,
+.rightSide > ul > li > span.text {
+  text-align: left;
+}
+
+@media only screen and (min-width: 1000px) {
+  .leftSide > ul > li > span.text,
+  .rightSide > ul > li > span.text {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .leftSide > ul > li > span.text,
+  .rightSide > ul > li > span.text {
+    padding-left: 10px;
+  }
 }

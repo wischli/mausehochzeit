@@ -17,13 +17,13 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+import ListItemText   from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import Checklist from './Checklist.js';
-import { Check, Close } from '@material-ui/icons';
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
+import InboxIcon from '@material-ui/icons/Inbox';
+import DraftsIcon from '@material-ui/icons/Drafts';
 
+
+import { ContactMail } from '@material-ui/icons';
 
 const styles = theme => ({
   card: {
@@ -51,7 +51,11 @@ const styles = theme => ({
   },
 });
 
-class DosDonts extends React.Component {
+function ListItemLink(props) {
+  return <ListItem button component="a" {...props} />;
+}
+
+class Contact extends React.Component {
   state = { expanded: false };
 
   handleExpandClick = () => {
@@ -64,37 +68,50 @@ class DosDonts extends React.Component {
       <div>
         <Card className={classes.card}>
           <CardHeader
-            title="Unsere Wünsche"
-            subheader=""
+            title="Die Trauzeugen"
+            subheader="Anne & Jonathan"
           />
           <CardContent>
-            <div className="dosDonts">
-              <Fade left>
-                <div>
-                  <div className="leftSide">
-                  <h2>Do's</h2>
-                  <ul>
-                    <Fade left><li><Check /><span className="text">Zeit zum Durchatmen</span></li></Fade>
-                    <li><Check /><span className="text">Spaß & Vergnügen</span></li>
-                    <li><Check /><span className="text">Tanz und Partylaune</span></li>
-                    <li><Check /><span className="text">Pastellige & gedeckte Farben (sieht auf Fotos einfach zauberhaft aus)</span></li>
-                  </ul>
+          <div>
+            <div className="Party-card">
+              <div className="Party-1">
+                Unsere Trauzeugen haben den imaginären Mause-Hut auf, wenn es um die Planung des Programms und allgemeine Anliegen geht.
+                Wenn es also Dinge gibt, von denen wir nichts wissen sollen, dann sind sie eure Ansprechpartner.
               </div>
-                </div>
-              </Fade>
-              <Fade right>
-                <div>
-                  <div className="rightSide">
-                    <h2>Donts's</h2>
-                    <ul>
-                      <li><Close /><span className="text">Zu viel Progamm</span></li>
-                      <li><Close /><span className="text">Überraschungen, die nicht mit den Trauzeugen abgesprochen sind</span></li>
-                      <li><Close /><span className="text">Schlagermusik wie Helene Fischer</span></li>
-                      <li><Close /><span className="text">Knallige Farben, weiß oder schwarz (außer bei Herrenanzügen)</span></li>
-                    </ul>
-                </div>
-                </div>
-              </Fade>
+            </div>
+            <div className="email-wrapper">
+              <div className="email-to">
+                <ContactMail />Anne Kasten
+              </div>
+              <div className="email-to">
+                <ContactMail />Jonathan Thüringer
+              </div>
+            </div>
+            <div className={classes.root}>
+  <List component="nav">
+    <ListItem button>
+      <ListItemIcon>
+        <InboxIcon />
+      </ListItemIcon>
+      <ListItemText primary="Inbox" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <DraftsIcon />
+      </ListItemIcon>
+      <ListItemText primary="Drafts" />
+    </ListItem>
+  </List>
+  <Divider />
+  <List component="nav">
+    <ListItem button>
+      <ListItemText primary="Trash" />
+    </ListItem>
+    <ListItemLink href="#simple-list">
+      <ListItemText primary="Spam" />
+    </ListItemLink>
+  </List>
+</div>
             </div>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
@@ -108,14 +125,14 @@ class DosDonts extends React.Component {
             >
             { !this.state.expanded ?
             <Button size="small" color="primary">
-              Checkliste für alle ersten Besucher
+              Der grobe Ablauf
             </Button> : ''}
               <ExpandMoreIcon />
             </IconButton>
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
             <CardContent>
-              <Checklist />
+              <h2>Der grobe Ablauf</h2>
             </CardContent>
           </Collapse>
         </Card>
@@ -124,9 +141,9 @@ class DosDonts extends React.Component {
   }
 }
 
-DosDonts.propTypes = {
+Contact.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
 
-export default withStyles(styles)(DosDonts);
+export default withStyles(styles)(Contact);

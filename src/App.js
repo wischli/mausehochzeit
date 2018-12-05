@@ -13,6 +13,8 @@ import ColorExample from './assets/scripts/ColorExample';
 import Welcome from './assets/scripts/Welcome';
 import Party from './assets/scripts/Party';
 import DosDonts from './assets/scripts/DosDonts';
+import Contact from './assets/scripts/Contact';
+import Slide from 'react-reveal/Slide';
 
 
 // import SimpleMap from './assets/scripts/SimpleMap'
@@ -30,14 +32,25 @@ class App extends Component {
         <main id="menuPageWrap">
           <Header />
           <div className="my-cards">
-            <Welcome />
-            <Party />
-            <DosDonts />
-            <Directions />
-            <ColorExample />
+            <Zoom>
+              <Welcome />
+            </Zoom>
+            <Slide>
+              <Party />
+            </Slide>
+            <Zoom>
+              <DosDonts />
+            </Zoom>
+            <Zoom>
+              <Directions />
+            </Zoom>
+            <Zoom>
+              <Contact />
+            </Zoom>
+            <Zoom>
+              <ColorExample />
+            </Zoom>
           </div>
-          <Zoom>
-          </Zoom>
         </main>
       </div>
     );
