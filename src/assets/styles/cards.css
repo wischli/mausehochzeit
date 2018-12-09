@@ -31,6 +31,11 @@
   justify-content: space-between;
 }
 
+.align-center {
+  -ms-align-items: center;
+  align-items: center;
+}
+
 .text-grey {
   font-weight: 100;
   color: grey;
@@ -47,6 +52,11 @@
 
 .imageHeader {
   padding: 20px;
+}
+
+.colorRows {
+  background-color: white;
+  border-radius: 5px;
 }
 
 .colorRow {
@@ -129,11 +139,11 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
 }
 
 .colorRow:nth-of-type(16) {
-  background: linear-gradient(to right, #ffaec457,  #6c0022);
+  background: linear-gradient(to right, #ffaec457, #ad647b);
 }
 
 .colorRow:nth-of-type(17) {
-  background: linear-gradient(to right, #fac0d761,  #841349);
+  background: linear-gradient(to right, #fac0d761, #841349ab);
 }
 
 .colorRow:nth-of-type(18) {
@@ -259,6 +269,10 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   .rightSide > ul > li > span.text {
     padding-left: 20px;
   }
+
+  .accomodation-expansion: {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (max-width: 999px) {
@@ -266,4 +280,62 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   .rightSide > ul > li > span.text {
     padding-left: 10px;
   }
+
+  .accomodation-expansion {
+    flex-direction: column;
+  }
 }
+
+.accomodation-expansion {
+  display: flex;
+  width: 100%
+}
+
+.accomodation-expansion > .row {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  padding: 5px;
+  text-align: left;
+}
+
+.accomodation-expansion > .row > svg {
+  margin-right: 10px;
+}
+
+.MuiCard-root-6 h2 {
+  font-family: 'Shadows Into Light', cursive !important;
+  font-weight: 400;
+}
+
+.MuiCardHeader-title-38 {
+  font-family: 'Shadows Into Light', cursive !important;
+  font-size: 200% !important;
+  font-weight: 600 !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.MuiCardHeader-root-34 {
+  padding-bottom: 0 !important;
+}
+
+.MuiTypography-colorTextSecondary-73 {
+  font-weight: 100 !important;
+  font-size: 110% !important;
+}
+
+.MuiCard-root-6 {
+  background: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(0, 0, 0, 0.9) !important;
+  line-height: 140% !important;
+}
+
+.MuiButton-containedPrimary-104 {
+  background-color: #c1d5d0;
+}
+
+/* .ControlledExpansionPanels-root-176,
+.MuiPaper-root-7 {
+  background: transparent !important;
+} */

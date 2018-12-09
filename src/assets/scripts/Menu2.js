@@ -18,7 +18,7 @@ class MyMenu extends React.Component {
         menuItems : [
           {
             href : '#',
-            title : 'Wichtigste Fakten'
+            title : 'Anfahrt'
           },
           {
             href : '#',
@@ -26,19 +26,19 @@ class MyMenu extends React.Component {
           },
           {
             href : '#',
-            title : 'Kevin Olaf'
+            title : 'Unterkünfte'
           },
           {
             href : '#',
-            title : 'Platzhalter #5'
+            title : 'Ablauf'
           },
           {
             href : '#',
-            title : 'Platzhalter #6'
+            title : 'Programm'
           },
           {
             href : '#',
-            title : 'Platzhalter #7'
+            title : 'Welche Farben sind okay?'
           },
         ],
         isOpen : false,

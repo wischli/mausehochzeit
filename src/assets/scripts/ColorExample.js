@@ -10,7 +10,6 @@ import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -62,7 +61,6 @@ class ColorExample extends React.Component {
             subheader="Gedeckte Farben"
           />
           <CardContent>
-            <Typography component="p">
               <div className="colorRows">
                 <div className="colorRow"></div>
                 <div className="colorRow"></div>
@@ -83,7 +81,6 @@ class ColorExample extends React.Component {
                 <div className="colorRow"></div>
                 <div className="colorRow"></div>
               </div>
-            </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
             <IconButton
@@ -103,8 +100,7 @@ class ColorExample extends React.Component {
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography>
-                <div className="mui--text-title">Unpassende Farben</div>
+                <h2>Unpassende Farben</h2>
                 <div className="colorBlocks">
                   <div className="colorBlock"></div>
                   <div className="colorBlock"></div>
@@ -113,10 +109,9 @@ class ColorExample extends React.Component {
                   <div className="colorBlock"></div>
                   <div className="colorBlock"></div>
                   <div className="colorBlock"></div>
-                    <div className="colorBlock"></div>
-                    <div className="colorBlock"></div>
+                  <div className="colorBlock"></div>
+                  <div className="colorBlock"></div>
                 </div>
-              </Typography>
             </CardContent>
           </Collapse>
         </Card>

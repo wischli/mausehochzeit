@@ -19,8 +19,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText   from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import InboxIcon from '@material-ui/icons/Inbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
+import Email from '@material-ui/icons/Email';
 
 
 import { ContactMail } from '@material-ui/icons';
@@ -79,62 +78,26 @@ class Contact extends React.Component {
                 Wenn es also Dinge gibt, von denen wir nichts wissen sollen, dann sind sie eure Ansprechpartner.
               </div>
             </div>
-            <div className="email-wrapper">
-              <div className="email-to">
-                <ContactMail />Anne Kasten
-              </div>
-              <div className="email-to">
-                <ContactMail />Jonathan Thüringer
-              </div>
-            </div>
             <div className={classes.root}>
-  <List component="nav">
-    <ListItem button>
-      <ListItemIcon>
-        <InboxIcon />
-      </ListItemIcon>
-      <ListItemText primary="Inbox" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <DraftsIcon />
-      </ListItemIcon>
-      <ListItemText primary="Drafts" />
-    </ListItem>
-  </List>
-  <Divider />
-  <List component="nav">
-    <ListItem button>
-      <ListItemText primary="Trash" />
-    </ListItem>
-    <ListItemLink href="#simple-list">
-      <ListItemText primary="Spam" />
-    </ListItemLink>
-  </List>
-</div>
+              <List component="nav">
+                <ListItem button component="a" href="mailto:annekasten@gmx.net?subject=Mausehochzeit">
+                  <ListItemIcon>
+                    <Email />
+                  </ListItemIcon>
+                  <ListItemText>
+                  Kontaktiere Anne
+                  </ListItemText>
+                </ListItem>
+                <ListItem button component="a" href="mailto:jona.thue@gmail.com?subject=Mausehochzeit">
+                  <ListItemIcon>
+                    <Email />
+                  </ListItemIcon>
+                  <ListItemText primary="Kontaktiere Jonathan" />
+                </ListItem>
+              </List>
+            </div>
             </div>
           </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton
-              className={classnames(classes.expand, {
-                [classes.expandOpen]: this.state.expanded,
-              })}
-              onClick={this.handleExpandClick}
-              aria-expanded={this.state.expanded}
-              aria-label="Show more"
-            >
-            { !this.state.expanded ?
-            <Button size="small" color="primary">
-              Der grobe Ablauf
-            </Button> : ''}
-              <ExpandMoreIcon />
-            </IconButton>
-          </CardActions>
-          <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <h2>Der grobe Ablauf</h2>
-            </CardContent>
-          </Collapse>
         </Card>
       </div>
     );

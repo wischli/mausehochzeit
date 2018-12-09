@@ -14,6 +14,7 @@ import Welcome from './assets/scripts/Welcome';
 import Party from './assets/scripts/Party';
 import DosDonts from './assets/scripts/DosDonts';
 import Contact from './assets/scripts/Contact';
+import Accomodation from './assets/scripts/Accomodation';
 import Slide from 'react-reveal/Slide';
 
 
@@ -47,6 +48,7 @@ class App extends Component {
             <Zoom>
               <Contact />
             </Zoom>
+            <Accomodation />
             <Zoom>
               <ColorExample />
             </Zoom>

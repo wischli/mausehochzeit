@@ -10,7 +10,6 @@ import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -20,7 +19,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText   from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 
-import { LooksOne, LooksTwo, Looks3, Looks4, Looks5, Looks6, MusicNote, Pets, BatteryChargingFull } from '@material-ui/icons';
+import { LooksOne, LooksTwo, Looks3, Looks4, Looks5, Looks6, MusicNote, Pets, LocalDining } from '@material-ui/icons';
 
 const styles = theme => ({
   card: {
@@ -142,7 +141,7 @@ class Party extends React.Component {
                 </ListItem>
                 <ListItem button divider>
                   <ListItemIcon>
-                  <BatteryChargingFull/>
+                  <LocalDining />
                   </ListItemIcon>
                   <ListItemText>
                     Abendessen

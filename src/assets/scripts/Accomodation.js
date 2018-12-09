@@ -17,13 +17,13 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+import ListItemText   from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import Checklist from './Checklist.js';
-import { CheckCircle, Cancel } from '@material-ui/icons';
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
+import Email from '@material-ui/icons/Email';
+import ExpansionPanel from './ExpansionPanel';
 
+
+import { ContactMail } from '@material-ui/icons';
 
 const styles = theme => ({
   card: {
@@ -51,7 +51,11 @@ const styles = theme => ({
   },
 });
 
-class DosDonts extends React.Component {
+function ListItemLink(props) {
+  return <ListItem button component="a" {...props} />;
+}
+
+class Accomodation extends React.Component {
   state = { expanded: false };
 
   handleExpandClick = () => {
@@ -64,37 +68,18 @@ class DosDonts extends React.Component {
       <div>
         <Card className={classes.card}>
           <CardHeader
-            title="Unsere Wünsche"
-            subheader="Bitte beachten"
+            title="Unterkünfte"
+            subheader="In Buckow"
           />
           <CardContent>
-            <div className="dosDonts">
-              <Fade left>
-                <div>
-                  <div className="leftSide">
-                  <h2>Do's</h2>
-                  <ul>
-                    <Fade left><li><CheckCircle /><span className="text">Zeit zum Durchatmen</span></li></Fade>
-                    <li><CheckCircle /><span className="text">Spaß & Vergnügen</span></li>
-                    <li><CheckCircle /><span className="text">Tanz und Partylaune</span></li>
-                    <li><CheckCircle /><span className="text">Festliche Garderobe in pastelligen & gedeckten Farben (sieht auf Fotos einfach zauberhaft aus)</span></li>
-                  </ul>
+            <div>
+              <div className="Party-card">
+                <div className="Party-1">
+                Wir haben hier eine kleine Auswahl an Übernachtungsmöglichkeiten zusammengestellt.
+                Die Preise sind nur ungefähre Orientierungen und können je nach Reisezeitraum und Personenanzahl variieren.
+                </div>
               </div>
-                </div>
-              </Fade>
-              <Fade right>
-                <div>
-                  <div className="rightSide">
-                    <h2>Donts's</h2>
-                    <ul>
-                      <li><Cancel /><span className="text">Zu viel Progamm</span></li>
-                      <li><Cancel /><span className="text">Überraschungen, die nicht mit den Trauzeugen abgesprochen sind</span></li>
-                      <li><Cancel /><span className="text">Schlagermusik wie Helene Fischer</span></li>
-                      <li><Cancel /><span className="text">Knallige Farben, weiß oder schwarz (außer bei Herrenanzügen)</span></li>
-                    </ul>
-                </div>
-                </div>
-              </Fade>
+              <ExpansionPanel />
             </div>
           </CardContent>
         </Card>
@@ -103,9 +88,9 @@ class DosDonts extends React.Component {
   }
 }
 
-DosDonts.propTypes = {
+Accomodation.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
 
-export default withStyles(styles)(DosDonts);
+export default withStyles(styles)(Accomodation);

@@ -14,6 +14,8 @@ class Header extends React.Component {
             <img src={logo} className="App-logo" width="100%" height="100%" alt="logo" />
           </MobileView>
           <div className="overlay">
+            <h1>Mausehochzeit</h1>
+            <h2>24.08.2019</h2>
           </div>
         </div>
       </header>
