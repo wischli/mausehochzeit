@@ -4,19 +4,14 @@ import { withStyles } from '@material-ui/core/styles';
 import classnames from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
-import Button from '@material-ui/core/Button';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+// import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import Divider from '@material-ui/core/Divider';
-
-
-import { LocalParking, Train, LocationOn, TimeToLeave, Favorite, Pets, Schedule, Call, Format_list_numbered, Place, Smoke_free } from '@material-ui/icons';
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 
 const styles = theme => ({
   card: {
@@ -61,6 +56,7 @@ class ColorExample extends React.Component {
             subheader="Gedeckte Farben"
           />
           <CardContent>
+            <Flip right>
               <div className="colorRows">
                 <div className="colorRow"></div>
                 <div className="colorRow"></div>
@@ -81,6 +77,7 @@ class ColorExample extends React.Component {
                 <div className="colorRow"></div>
                 <div className="colorRow"></div>
               </div>
+            </Flip>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
             <IconButton
@@ -91,14 +88,12 @@ class ColorExample extends React.Component {
               aria-expanded={this.state.expanded}
               aria-label="Show more"
             >
-            { !this.state.expanded ?
-            <Button size="small" color="primary">
-              Zeige unpassende Farben
-            </Button> : ''}
+            { !this.state.expanded ? 'Zeige unpassende Farben' : ''}
               <ExpandMoreIcon />
             </IconButton>
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Fade left>
             <CardContent>
                 <h2>Unpassende Farben</h2>
                 <div className="colorBlocks">
@@ -113,6 +108,7 @@ class ColorExample extends React.Component {
                   <div className="colorBlock"></div>
                 </div>
             </CardContent>
+            </Fade>
           </Collapse>
         </Card>
       </div>

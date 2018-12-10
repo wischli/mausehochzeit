@@ -304,7 +304,12 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   margin-right: 10px;
 }
 
-.MuiCard-root-6 h2 {
+h2 {
+  font-family: 'Shadows Into Light', cursive !important;
+  font-weight: 400;
+}
+
+/* .MuiCard-root-6 h2 {
   font-family: 'Shadows Into Light', cursive !important;
   font-weight: 400;
 }
@@ -333,7 +338,7 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
 
 .MuiButton-containedPrimary-104 {
   background-color: #c1d5d0;
-}
+} */
 
 /* .ControlledExpansionPanels-root-176,
 .MuiPaper-root-7 {

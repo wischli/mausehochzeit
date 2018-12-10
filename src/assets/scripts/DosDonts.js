@@ -1,33 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import classnames from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import IconButton from '@material-ui/core/IconButton';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import Divider from '@material-ui/core/Divider';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import Checklist from './Checklist.js';
 import { CheckCircle, Cancel } from '@material-ui/icons';
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
-
 
 const styles = theme => ({
   card: {
     margin: 10,
+    lineHeight: '140%',
   },
   media: {
     height: 0,
@@ -85,7 +68,7 @@ class DosDonts extends React.Component {
               <Fade right>
                 <div>
                   <div className="rightSide">
-                    <h2>Donts's</h2>
+                    <h2>Dont's</h2>
                     <ul>
                       <li><Cancel /><span className="text">Zu viel Progamm</span></li>
                       <li><Cancel /><span className="text">Überraschungen, die nicht mit den Trauzeugen abgesprochen sind</span></li>
@@ -106,6 +89,5 @@ class DosDonts extends React.Component {
 DosDonts.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-
 
 export default withStyles(styles)(DosDonts);

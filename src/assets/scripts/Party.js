@@ -4,22 +4,18 @@ import { withStyles } from '@material-ui/core/styles';
 import classnames from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
-import Button from '@material-ui/core/Button';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+// import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText   from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-
-import { LooksOne, LooksTwo, Looks3, Looks4, Looks5, Looks6, MusicNote, Pets, LocalDining } from '@material-ui/icons';
+import Fade from 'react-reveal/Fade';
+import { LooksOne, LooksTwo, Looks3, Looks4, Looks5, MusicNote, Pets, LocalDining } from '@material-ui/icons';
 
 const styles = theme => ({
   card: {
@@ -57,6 +53,7 @@ class Party extends React.Component {
   render() {
     const { classes } = this.props;
     return (
+      <Fade>
       <div>
         <Card className={classes.card}>
           <CardHeader
@@ -85,13 +82,12 @@ class Party extends React.Component {
               aria-label="Show more"
             >
             { !this.state.expanded ?
-            <Button size="small" color="primary">
-              Der grobe Ablauf
-            </Button> : ''}
+              'Der grobe Ablauf' : ''}
               <ExpandMoreIcon />
             </IconButton>
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+          <Fade left>
             <CardContent>
               <h2>Der grobe Ablauf</h2>
               <List component="nav" className={classes.root}>
@@ -157,9 +153,11 @@ class Party extends React.Component {
                 </ListItem>
               </List>
             </CardContent>
+            </Fade>
           </Collapse>
         </Card>
       </div>
+      </Fade>
     );
   }
 }
@@ -170,3 +168,4 @@ Party.propTypes = {
 
 
 export default withStyles(styles)(Party);
+// export default Party;

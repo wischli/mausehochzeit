@@ -2,8 +2,7 @@ import { stack as Menu } from 'react-burger-menu';
 import React from 'react';
 import icon from '../../images/mouse-black-animal.svg';
 import '../styles/Menu.css';
-import "./Test.css";
-import { Favorite, Pets, Schedule, Call, Format_list_numbered, Place, Smoke_free } from '@material-ui/icons';
+import { Favorite } from '@material-ui/icons';
 
 class MyMenu extends React.Component {
   constructor(props){

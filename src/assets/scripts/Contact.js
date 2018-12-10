@@ -1,28 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import classnames from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import IconButton from '@material-ui/core/IconButton';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText   from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Email from '@material-ui/icons/Email';
-
-
-import { ContactMail } from '@material-ui/icons';
+import Tada from 'react-reveal/Tada';
 
 const styles = theme => ({
   card: {
@@ -50,10 +37,6 @@ const styles = theme => ({
   },
 });
 
-function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
-}
-
 class Contact extends React.Component {
   state = { expanded: false };
 
@@ -78,6 +61,7 @@ class Contact extends React.Component {
                 Wenn es also Dinge gibt, von denen wir nichts wissen sollen, dann sind sie eure Ansprechpartner.
               </div>
             </div>
+            <Tada>
             <div className={classes.root}>
               <List component="nav">
                 <ListItem button component="a" href="mailto:annekasten@gmx.net?subject=Mausehochzeit">
@@ -96,6 +80,7 @@ class Contact extends React.Component {
                 </ListItem>
               </List>
             </div>
+            </Tada>
             </div>
           </CardContent>
         </Card>

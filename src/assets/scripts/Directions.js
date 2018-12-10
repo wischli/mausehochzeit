@@ -10,7 +10,6 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Button from '@material-ui/core/Button';
 import { BrowserView, MobileView } from "react-device-detect";
 import scheuneBuckow from '../../images/StadtscheuneBuckow.webp';
@@ -20,10 +19,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-
-
-
-
+import Fade from 'react-reveal/Fade';
+import Tada from 'react-reveal/Tada';
 import { LocalParking, Train, LocationOn, TimeToLeave } from '@material-ui/icons';
 
 const styles = theme => ({
@@ -87,14 +84,13 @@ class Directions extends React.Component {
         <Card className={classes.card}>
           <CardHeader
             title="Die Hochzeitslocation"
-            subheader="Stadtscheune Buckow (Märkische Schweiz)"
+            subheader="Stadtscheune Buckow in der Märkische Schweiz"
           />
-          <BrowserView viewClassName="smaller-image"><img src={scheuneBuckow2} className="imageHeader"/></BrowserView>
-          <MobileView><img src={scheuneBuckow} /></MobileView>
+          <BrowserView viewClassName="smaller-image"><img src={scheuneBuckow2} className="imageHeader" alt="scheune-buckow"/></BrowserView>
+          <MobileView><img src={scheuneBuckow} alt="scheune-buckow" /></MobileView>
           <CardContent>
             Wir verbringen den gesamten Hochzeitstag auf dem schönen Gelände der Stadtscheune Buckow. Hier findet sowohl die freie Trauung, als auch die feuchtfröhliche Feier im Anschluss statt. Die Fahrtzeit beträgt bei Anreise mit Auto etwa 1h und mit den Öffentlichen etwa 1,5h.
           </CardContent>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9699.399298433606!2d14.072156!3d52.572327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef75d65cbafa2407!2sStadtscheune+Buckow!5e0!3m2!1sen!2sde!4v1543577150211" width="100%" height="100" frameborder="0" allowfullscreen></iframe>
           <CardActions className={classes.actions} disableActionSpacing>
             <IconButton aria-label="Add to favorites">
               <FavoriteIcon />
@@ -109,14 +105,12 @@ class Directions extends React.Component {
               aria-expanded={this.state.expanded}
               aria-label="Show more"
             >
-            { !this.state.expanded ?
-            <Button size="small" color="primary">
-              Zeige mir weitere Infos
-            </Button> : ''}
+            { !this.state.expanded ? 'Zeige mir weitere Infos' : ''}
               <ExpandMoreIcon />
             </IconButton>
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Fade left>
             <CardContent>
             <h2 className={classes.h2}>Die wichtigsten Infos zur Anreise</h2>
             <List component="nav" className={classes.root}>
@@ -140,9 +134,11 @@ class Directions extends React.Component {
                   <ListItemText>
                   <div className="space-between align-center">
                     Dauer: Etwa 50min
-                    <Button variant="contained" color="primary" className={classes.button} href="https://www.google.com/maps/dir//52.572327,14.072156/@52.572327,14.072156,14z?hl=de-DE/">
+                    <Tada>
+                    <Button variant="contained" color="primary" className={classes.button} href="https://www.google.com/maps/dir//52.572327,14.072156/@52.572327,14.072156,14z?hl=de-DE/" target="_blank">
                       Route berechnen
                     </Button>
+                    </Tada>
                   </div>
                   </ListItemText>
                 </ListItem>
@@ -154,15 +150,18 @@ class Directions extends React.Component {
                   <ListItemText>
                   <div className="space-between align-center">
                     Dauer: Etwa 90min
-                    <Button variant="contained" color="primary" className={classes.button} href="https://www.google.com/maps/dir//52.572327,14.072156/@52.5723334,14.0677786,16z/data=!3m1!4b1!4m2!4m1!3e3?hl=de-DE">
+                    <Tada>
+                    <Button variant="contained" color="primary" className={classes.button} href="https://www.google.com/maps/dir//52.572327,14.072156/@52.5723334,14.0677786,16z/data=!3m1!4b1!4m2!4m1!3e3?hl=de-DE" target="_blank">
                       Route berechnen
                     </Button>
+                    </Tada>
                     </div>
                   <span className="text-grey">Regio RB26 bis Müncheberg, dann Bus 928 bis Buckow</span>
                   </ListItemText>
                 </ListItem>
               </List>
             </CardContent>
+            </Fade>
           </Collapse>
         </Card>
       </div>
