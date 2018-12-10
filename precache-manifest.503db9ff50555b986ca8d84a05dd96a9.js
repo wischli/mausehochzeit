@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/media/StadtscheuneBuckow.b1edfaa8.webp"
   },
   {
-    "revision": "e0b4b3f598e47e9add2b",
+    "revision": "c3e1dc4156e891812b52",
     "url": "/mausehochzeit/static/css/main.cfb99c19.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/media/mouse-black-animal.8c93fd97.svg"
   },
   {
-    "revision": "e0b4b3f598e47e9add2b",
-    "url": "/mausehochzeit/static/js/main.e0b4b3f5.chunk.js"
+    "revision": "c3e1dc4156e891812b52",
+    "url": "/mausehochzeit/static/js/main.c3e1dc41.chunk.js"
   },
   {
     "revision": "bf7661817d251a439c85ec4bd0c4723e",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/media/sunday.565eef62.ttf"
   },
   {
-    "revision": "c8e0b44e5aa0b70b6bc3b6292392b3bb",
+    "revision": "9f390fd37db15c591d248864bd44957f",
     "url": "/mausehochzeit/index.html"
   }
 ];
