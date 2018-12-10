@@ -1,9 +1,9 @@
 {
   "main.css": "/mausehochzeit/static/css/main.fcc9cd22.chunk.css",
-  "main.js": "/mausehochzeit/static/js/main.161a4af6.chunk.js",
-  "main.js.map": "/mausehochzeit/static/js/main.161a4af6.chunk.js.map",
-  "static/js/1.055d34f3.chunk.js": "/mausehochzeit/static/js/1.055d34f3.chunk.js",
-  "static/js/1.055d34f3.chunk.js.map": "/mausehochzeit/static/js/1.055d34f3.chunk.js.map",
+  "main.js": "/mausehochzeit/static/js/main.5b952026.chunk.js",
+  "main.js.map": "/mausehochzeit/static/js/main.5b952026.chunk.js.map",
+  "static/js/1.0bcc3688.chunk.js": "/mausehochzeit/static/js/1.0bcc3688.chunk.js",
+  "static/js/1.0bcc3688.chunk.js.map": "/mausehochzeit/static/js/1.0bcc3688.chunk.js.map",
   "runtime~main.js": "/mausehochzeit/static/js/runtime~main.211cfd54.js",
   "runtime~main.js.map": "/mausehochzeit/static/js/runtime~main.211cfd54.js.map",
   "static/media/forest.webp": "/mausehochzeit/static/media/forest.5be4ffdb.webp",
@@ -13,6 +13,6 @@
   "static/media/mouse-black-animal.svg": "/mausehochzeit/static/media/mouse-black-animal.8c93fd97.svg",
   "static/css/main.fcc9cd22.chunk.css.map": "/mausehochzeit/static/css/main.fcc9cd22.chunk.css.map",
   "index.html": "/mausehochzeit/index.html",
-  "precache-manifest.1b0df57106297eb855e06c729bd67a61.js": "/mausehochzeit/precache-manifest.1b0df57106297eb855e06c729bd67a61.js",
+  "precache-manifest.49316c6779d9aa8abf79be71f5b169d1.js": "/mausehochzeit/precache-manifest.49316c6779d9aa8abf79be71f5b169d1.js",
   "service-worker.js": "/mausehochzeit/service-worker.js"
 }
