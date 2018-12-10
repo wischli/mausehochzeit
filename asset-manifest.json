@@ -1,9 +1,9 @@
 {
-  "main.css": "/mausehochzeit/static/css/main.90db0577.chunk.css",
-  "main.js": "/mausehochzeit/static/js/main.ab608b08.chunk.js",
-  "main.js.map": "/mausehochzeit/static/js/main.ab608b08.chunk.js.map",
-  "static/js/1.3a31f0ce.chunk.js": "/mausehochzeit/static/js/1.3a31f0ce.chunk.js",
-  "static/js/1.3a31f0ce.chunk.js.map": "/mausehochzeit/static/js/1.3a31f0ce.chunk.js.map",
+  "main.css": "/mausehochzeit/static/css/main.cfb99c19.chunk.css",
+  "main.js": "/mausehochzeit/static/js/main.94883cee.chunk.js",
+  "main.js.map": "/mausehochzeit/static/js/main.94883cee.chunk.js.map",
+  "static/js/1.55473abf.chunk.js": "/mausehochzeit/static/js/1.55473abf.chunk.js",
+  "static/js/1.55473abf.chunk.js.map": "/mausehochzeit/static/js/1.55473abf.chunk.js.map",
   "runtime~main.js": "/mausehochzeit/static/js/runtime~main.211cfd54.js",
   "runtime~main.js.map": "/mausehochzeit/static/js/runtime~main.211cfd54.js.map",
   "static/media/forest.webp": "/mausehochzeit/static/media/forest.5be4ffdb.webp",
@@ -11,8 +11,8 @@
   "static/media/StadtscheuneBuckow2.webp": "/mausehochzeit/static/media/StadtscheuneBuckow2.bf766181.webp",
   "static/media/index.css": "/mausehochzeit/static/media/sunday.565eef62.ttf",
   "static/media/mouse-black-animal.svg": "/mausehochzeit/static/media/mouse-black-animal.8c93fd97.svg",
-  "static/css/main.90db0577.chunk.css.map": "/mausehochzeit/static/css/main.90db0577.chunk.css.map",
+  "static/css/main.cfb99c19.chunk.css.map": "/mausehochzeit/static/css/main.cfb99c19.chunk.css.map",
   "index.html": "/mausehochzeit/index.html",
-  "precache-manifest.a95e5a94d18de585a20367a61a279b5e.js": "/mausehochzeit/precache-manifest.a95e5a94d18de585a20367a61a279b5e.js",
+  "precache-manifest.a5c2cf09102b0b832dcfeb104706827f.js": "/mausehochzeit/precache-manifest.a5c2cf09102b0b832dcfeb104706827f.js",
   "service-worker.js": "/mausehochzeit/service-worker.js"
 }
