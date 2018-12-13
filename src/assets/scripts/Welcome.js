@@ -86,7 +86,7 @@ class Welcome extends React.Component {
               aria-expanded={this.state.expanded}
               aria-label="Show more"
               >
-              { !this.state.expanded ? 'Zur Umfrage' : ''}
+              { !this.state.expanded ? 'Öffne & beantworte die Umfrage' : ''}
               <ExpandMoreIcon />
             </IconButton>
           </CardActions>

@@ -89,7 +89,7 @@ class Directions extends React.Component {
             aria-expanded={this.state.expanded}
             aria-label="Show more"
             >
-            { !this.state.expanded ? 'Zur Umfrage' : ''}
+            { !this.state.expanded ? 'Öffne die Umfrage' : ''}
             <ExpandMoreIcon />
           </IconButton>
         </CardActions>

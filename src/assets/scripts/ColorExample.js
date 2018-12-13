@@ -58,13 +58,13 @@ class ColorExample extends React.Component {
           <CardContent>
             <div>
               Wir würden uns sehr darüber freuen, wenn die Gäste in festlicher Garderobe und nicht einfach mit Jeans und abgenutzten Sneakern erscheinen würden.
-              Das soll nicht heißen, dass beispielsweise alle Männer im Anzug kommen müssen, eine schlichte schicke Chino und Hemd, ggfs noch mit Fliege, ist für uns schon festlich!
+              Das soll nicht heißen, dass beispielsweise alle Männer im Anzug kommen müssen, eine <strong>schlichte schicke Chino und Hemd</strong>, ggfs noch mit Fliege, ist für uns schon festlich!
             </div>
             <div style={{marginTop: 10}}>
-              Wichtiger sind für uns jedoch die Farben eurer Kleidungsstücke, damit tollen Aufnahmen nichts im Wege steht und niemand außer dem Brautpaar heraussticht.
+              Wichtiger sind für uns jedoch die <strong>Farben eurer Kleidungsstücke</strong>, damit tollen Aufnahmen nichts im Wege steht und niemand außer dem Brautpaar heraussticht.
               Daher bitten wir euch, auf gedeckte & pastellige Farben zurückzugreifen. Als Inspiration hier mal ein paar Farbbeispiele:
             </div>
-            <Flip right style={{marginTop: 10}}>
+            <Flip right>
               <div className="colorRows">
                 <div className="colorRow"></div>
                 <div className="colorRow"></div>

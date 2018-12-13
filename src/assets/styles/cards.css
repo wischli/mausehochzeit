@@ -211,11 +211,11 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   margin: 10px 0;
 }
 
-.MuiListItemIcon-root-273 {
+/* .MuiListItemIcon-root-273 {
   background: #eef6f2;
   border-radius: 100%;
   padding: 5px;
-}
+} */
 
 .dosDonts {
   display: flex;
@@ -317,42 +317,6 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   font-weight: 400;
 }
 
-/* .MuiCard-root-6 h2 {
-  font-family: 'Shadows Into Light', cursive !important;
-  font-weight: 400;
-}
-
-.MuiCardHeader-title-38 {
-  font-family: 'Shadows Into Light', cursive !important;
-  font-size: 200% !important;
-  font-weight: 600 !important;
-  color: rgba(0, 0, 0, 0.6) !important;
-}
-
-.MuiCardHeader-root-34 {
-  padding-bottom: 0 !important;
-}
-
-.MuiTypography-colorTextSecondary-73 {
-  font-weight: 100 !important;
-  font-size: 110% !important;
-}
-
-.MuiCard-root-6 {
-  background: rgba(255, 255, 255, 0.6) !important;
-  color: rgba(0, 0, 0, 0.9) !important;
-  line-height: 140% !important;
-}
-
-.MuiButton-containedPrimary-104 {
-  background-color: #c1d5d0;
-} */
-
-/* .ControlledExpansionPanels-root-176,
-.MuiPaper-root-7 {
-  background: transparent !important;
-} */
-
 .review-img {
   opacity: 0.8;
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
@@ -366,6 +330,13 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
 
 .review-img:hover {
     opacity: 0.3;
+}
+
+.directions-expanded svg {
+  font-size: 30px;
+  background-color: #f5f5f5;
+  border-radius: 100%;
+  padding: 5px;
 }
 
 h3 {

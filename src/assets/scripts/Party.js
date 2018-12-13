@@ -79,7 +79,7 @@ class Party extends React.Component {
               aria-label="Show more"
             >
             { !this.state.expanded ?
-              'Der grobe Ablauf' : ''}
+              'Zeig mir den groben Ablauf' : ''}
               <ExpandMoreIcon />
             </IconButton>
           </CardActions>

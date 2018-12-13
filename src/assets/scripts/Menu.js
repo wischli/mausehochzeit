@@ -53,7 +53,7 @@ class MyMenu extends React.Component {
 
   renderMenuItems = (state) => {
     return this.state.menuItems.map(item => {
-      return <Link onClick={() => this.closeMenu()} className="menu-item" key={item.title} offset={-10} activeClass="active" to={item.href.replace('#','')} smooth={true} duration={200}>{item.icon ? item.icon : ''}<div className="menu-text" style={{flex: 1}}>{item.title}</div></Link>;
+      return <Link onClick={() => this.closeMenu()} className="menu-item" key={item.title} offset={-10} activeClass="active" to={item.href.replace('#','')} smooth={true} duration={500}>{item.icon ? item.icon : ''}<div className="menu-text" style={{flex: 1}}>{item.title}</div></Link>;
     });
   };
 

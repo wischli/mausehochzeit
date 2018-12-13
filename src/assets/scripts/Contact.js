@@ -60,7 +60,7 @@ class Contact extends React.Component {
           <div>
             <div className="Party-card">
               <div className="Party-1">
-                Unsere Trauzeugen haben den imaginären Mause-Hut auf, wenn es um die Planung des Programms und allgemeine Anliegen geht.
+                Unsere Trauzeugen haben den imaginären Mause-Hut auf, wenn es um die <strong>Planung des Programms und allgemeine Anliegen</strong> geht.
                 Wenn es also Dinge gibt, von denen wir nichts wissen sollen, dann sind sie eure Ansprechpartner.
               </div>
             </div>

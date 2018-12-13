@@ -55,6 +55,17 @@ import { createMuiTheme } from '@material-ui/core/styles';
         fontSize: 18,
       }
     },
+    Directions: {
+      root: {
+        '>': {
+          MuiSvgIcon: {
+            root: {
+              fontSize: 30,
+            }
+          }
+        }
+      }
+    }
   },
 });
 
