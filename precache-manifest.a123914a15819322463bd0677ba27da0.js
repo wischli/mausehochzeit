@@ -1,27 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "122f92424800cd4aef58915981671888",
-    "url": "/mausehochzeit/static/media/bergschloesschen-review.122f9242.png"
+    "revision": "2a2a3ec20ee36add3768dc5b20904084",
+    "url": "/mausehochzeit/static/media/bellevue-review.2a2a3ec2.png"
   },
   {
-    "revision": "d358a613d86d9392a531",
-    "url": "/mausehochzeit/static/css/main.deda5a7d.chunk.css"
+    "revision": "3ed6dfabc0c3fd3baa48",
+    "url": "/mausehochzeit/static/css/main.0f4ac39c.chunk.css"
   },
   {
-    "revision": "126b2cf5376c28b3e3e4",
-    "url": "/mausehochzeit/static/js/1.126b2cf5.chunk.js"
+    "revision": "9f24abfe8d2cc6f6e1e7",
+    "url": "/mausehochzeit/static/js/1.9f24abfe.chunk.js"
   },
   {
     "revision": "211cfd5429c939f47221",
     "url": "/mausehochzeit/static/js/runtime~main.211cfd54.js"
   },
   {
-    "revision": "5be4ffdb51b5bd26372bc700e507d8fd",
-    "url": "/mausehochzeit/static/media/forest.5be4ffdb.webp"
-  },
-  {
     "revision": "8c93fd97b714f2d044175096c661db03",
     "url": "/mausehochzeit/static/media/mouse-black-animal.8c93fd97.svg"
+  },
+  {
+    "revision": "a7cbd83a895f44dbadbdcf820662def0",
+    "url": "/mausehochzeit/static/media/MausehochzeitTeaser_mobile_2.a7cbd83a.jpg"
+  },
+  {
+    "revision": "be9228a65050b59f0279f34c52cfe0da",
+    "url": "/mausehochzeit/static/media/MausehochzeitTeaser_desktop.be9228a6.jpg"
   },
   {
     "revision": "b1edfaa8708822d5c9eb473f861807ca",
@@ -32,12 +36,12 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/media/StadtscheuneBuckow2.bf766181.webp"
   },
   {
-    "revision": "2a2a3ec20ee36add3768dc5b20904084",
-    "url": "/mausehochzeit/static/media/bellevue-review.2a2a3ec2.png"
+    "revision": "3ed6dfabc0c3fd3baa48",
+    "url": "/mausehochzeit/static/js/main.3ed6dfab.chunk.js"
   },
   {
-    "revision": "d358a613d86d9392a531",
-    "url": "/mausehochzeit/static/js/main.d358a613.chunk.js"
+    "revision": "122f92424800cd4aef58915981671888",
+    "url": "/mausehochzeit/static/media/bergschloesschen-review.122f9242.png"
   },
   {
     "revision": "0e36ac880b361ac94344e246a0a57789",
@@ -68,7 +72,7 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/media/sunday.565eef62.ttf"
   },
   {
-    "revision": "5c66e007847bc89f90ee4b56a6b7e019",
+    "revision": "39346ba12a07a3a4d89b5a05e5718c51",
     "url": "/mausehochzeit/index.html"
   }
 ];
