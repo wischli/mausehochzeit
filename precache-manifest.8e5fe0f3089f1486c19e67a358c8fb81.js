@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/media/bergschloesschen-review.122f9242.png"
   },
   {
-    "revision": "1a3122674e96355b8026",
-    "url": "/mausehochzeit/static/css/main.0e9604e7.chunk.css"
+    "revision": "d358a613d86d9392a531",
+    "url": "/mausehochzeit/static/css/main.deda5a7d.chunk.css"
   },
   {
-    "revision": "26b5d73a7909b0dfcf8b",
-    "url": "/mausehochzeit/static/js/1.26b5d73a.chunk.js"
+    "revision": "126b2cf5376c28b3e3e4",
+    "url": "/mausehochzeit/static/js/1.126b2cf5.chunk.js"
   },
   {
     "revision": "211cfd5429c939f47221",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/media/bellevue-review.2a2a3ec2.png"
   },
   {
-    "revision": "1a3122674e96355b8026",
-    "url": "/mausehochzeit/static/js/main.1a312267.chunk.js"
+    "revision": "d358a613d86d9392a531",
+    "url": "/mausehochzeit/static/js/main.d358a613.chunk.js"
   },
   {
     "revision": "0e36ac880b361ac94344e246a0a57789",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/mausehochzeit/static/media/sunday.565eef62.ttf"
   },
   {
-    "revision": "10313df6f3168f2568402dc55f0858e4",
+    "revision": "5c66e007847bc89f90ee4b56a6b7e019",
     "url": "/mausehochzeit/index.html"
   }
 ];
