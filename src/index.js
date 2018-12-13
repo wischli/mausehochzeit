@@ -5,7 +5,7 @@ import './assets/styles/Menu.css';
 import './assets/styles/global.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import MuiThemeProvider from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import MyTheme from './assets/scripts/Styles.js';
 
 ReactDOM.render(

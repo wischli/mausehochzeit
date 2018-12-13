@@ -54,7 +54,7 @@ class Party extends React.Component {
     const { classes } = this.props;
     return (
       <Fade>
-      <div>
+      <div id="timeline">
         <Card className={classes.card}>
           <CardHeader
             title="Wie wird gefeiert?"
@@ -66,9 +66,6 @@ class Party extends React.Component {
                 Unsere Hochzeit soll im Stil von Wald, Natur und Shabby Chic sein.
                 Also da, wo sich Kleintiere am wohlsten fühlen.
                 Daher würden wir uns über jegliche Einflüsse, Mitbringsel und Co. in dieser Richtung freuen.
-              </div>
-              <div className="Party-2">
-                Lasst uns einen entspannten Tag miteinander verbringen!
               </div>
             </div>
           </CardContent>
@@ -88,6 +85,7 @@ class Party extends React.Component {
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
           <Fade left>
+            <div>Lasst uns einen entspannten Tag miteinander verbringen!</div>
             <CardContent>
               <h2>Der grobe Ablauf</h2>
               <List component="nav" className={classes.root}>

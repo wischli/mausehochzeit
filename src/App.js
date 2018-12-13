@@ -4,7 +4,7 @@ import './assets/styles/Menu.css';
 import './assets/styles/cards.css';
 // import Button from '@material-ui/core/Button';
 // import Menu from './assets/Menu';
-import Menu from './assets/scripts/Menu2';
+import Menu from './assets/scripts/Menu';
 import Expire from './assets/scripts/Expire';
 // import Zoom from 'react-reveal/Zoom';
 import Header from './assets/scripts/Header';
@@ -23,9 +23,9 @@ class App extends Component {
   render() {
     return (
       <div id="menuOuterContainer" className="App">
-        <Expire delayShow={2000} delayHide={10000}>
+        <Expire delayShow={5000} delayHide={15000}>
           <Fade>
-            <div className="button-text"><span className="button-text-inner">Mau! Drück mich</span></div>
+            <div className="button-text"><span className="button-text-inner">Mau! Drück mich!</span></div>
           </Fade>
         </Expire>
         <Menu />
@@ -39,15 +39,17 @@ class App extends Component {
               <Party />
             </Fade>
             <Fade>
-              <DosDonts />
+              <Directions />
             </Fade>
             <Fade>
-              <Directions />
+              <Accomodation />
             </Fade>
             <Fade>
               <Contact />
             </Fade>
-            <Accomodation />
+            <Fade>
+              <DosDonts />
+            </Fade>
             <Fade>
               <ColorExample />
             </Fade>

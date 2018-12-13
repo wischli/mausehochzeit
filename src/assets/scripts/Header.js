@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../../images/forest.webp';
+import MobileTeaser from '../../images/MausehochzeitTeaser_mobile_2.jpg';
+import DesktopTeaser from '../../images/MausehochzeitTeaser_desktop.jpg';
 import { BrowserView, MobileView } from "react-device-detect";
 
 class Header extends React.Component {
@@ -8,10 +9,10 @@ class Header extends React.Component {
       <header className="App-header">
         <div className="wrapper">
           <BrowserView className="browserLogo">
-            <img src={logo} className="App-logo" width="100%" height="100%" alt="logo" />
+            <img src={DesktopTeaser} className="App-logo" width="100%" height="100%" alt="logo" />
           </BrowserView>
           <MobileView className="mobileLogo">
-            <img src={logo} className="App-logo" width="100%" height="100%" alt="logo" />
+            <img src={MobileTeaser} className="App-logo" width="100%" height="100%" alt="logo" />
           </MobileView>
           <div className="overlay">
             <h1>Mausehochzeit</h1>

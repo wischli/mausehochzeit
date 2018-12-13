@@ -15,15 +15,17 @@
   width: 100%;
 }
 
-.smaller-image {
+.barn-desktop {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.smaller-image > img {
+  /* margin-left: auto;
+  margin-right: auto; */
   box-shadow: 0 0 3px 0 grey;
   border-radius: 5px;
+  margin: 20px auto 0;
+}
+
+.barn-mobile {
+  margin-top: 15px;
 }
 
 .space-between {
@@ -50,13 +52,14 @@
   padding-right: 10px;
 }
 
-.imageHeader {
-  padding: 20px;
-}
+/* .imageHeader {
+  margin: 20px;
+} */
 
 .colorRows {
   background-color: white;
   border-radius: 5px;
+  margin-top: 15px;
 }
 
 .colorRow {
@@ -221,6 +224,7 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
 .leftSide,
 .rightSide {
   width: 100%;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
 }
 
 .leftSide {
@@ -284,6 +288,10 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   .accomodation-expansion {
     flex-direction: column;
   }
+
+  .review-img {
+    margin-top: 5px;
+  }
 }
 
 .accomodation-expansion {
@@ -304,7 +312,7 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   margin-right: 10px;
 }
 
-h2 {
+.my-cards h2 {
   font-family: 'Shadows Into Light', cursive !important;
   font-weight: 400;
 }
@@ -344,3 +352,25 @@ h2 {
 .MuiPaper-root-7 {
   background: transparent !important;
 } */
+
+.review-img {
+  opacity: 0.8;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+  max-width: 223px;
+  max-height: 57px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  transition: opacity 0.3s;
+}
+
+.review-img:hover {
+    opacity: 0.3;
+}
+
+h3 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 15px;
+}

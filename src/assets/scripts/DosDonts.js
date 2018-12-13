@@ -44,7 +44,7 @@ class DosDonts extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div id="dosDonts">
         <Card className={classes.card}>
           <CardHeader
             title="Unsere Wünsche"

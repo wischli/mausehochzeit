@@ -1,0 +1,9 @@
+{
+  "node": true,
+  "esversion": 6,
+  "globals": {
+    "require": false,
+    "node": true,
+    "esversion": 6
+  }
+}

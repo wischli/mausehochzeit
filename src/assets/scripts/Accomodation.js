@@ -44,7 +44,7 @@ class Accomodation extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div id="unterkunft">
         <Card className={classes.card}>
           <Fade>
           <CardHeader
@@ -55,7 +55,7 @@ class Accomodation extends React.Component {
             <div>
               <div className="Party-card">
                 <div className="Party-1">
-                Wir haben hier eine kleine Auswahl an Übernachtungsmöglichkeiten zusammengestellt.
+                Wir haben hier eine kleine Auswahl an Übernachtungsmöglichkeiten mit den nötigsten Informationen zusammengestellt.
                 Die Preise sind nur ungefähre Orientierungen und können je nach Reisezeitraum und Personenanzahl variieren.
                 </div>
               </div>

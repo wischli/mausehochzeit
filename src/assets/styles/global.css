@@ -12,7 +12,9 @@ html {
   color: white;
   /* background: -webkit-repeating-radial-gradient(top left, circle, #a3c1b7, #f5f5f5 57%, #a3c1b7 103%) fixed; */
   /* background-attachment: fixed; */
+  /* background: rgb(89, 121, 112); */
   font-weight: 100;
+  scroll-behavior: smooth;
 }
 
 a:not(.bm-item) {
@@ -21,9 +23,9 @@ a:not(.bm-item) {
   font-weight: 600;
 }
 
-a:not(.bm-item):hover {
+/* a:not(.bm-item):hover {
   border-bottom: 2px solid #c1819f;
-}
+} */
 
 button > span {
   color: #c1819f;
@@ -49,10 +51,6 @@ button > span {
 img {
   max-width: 100%;
 }
-
-  body {
-    min-height: 100000px;
-  }
 
 .App-logo {
   /* animation: App-logo-spin infinite 20s linear; */
@@ -83,9 +81,17 @@ img {
   right: 0;
 }
 
-h1 {
-  color: #cbfffb;
-  /* color: #d4e9 ea; */
+.overlay > h1 {
+  /* color: #cbfffb; */
+  color: #f3feff;
+  font-family: "LaserMetal";
+  margin-bottom: 0;
+}
+
+.overlay > h2 {
+  color: #ebf5f6;
+  font-family: "Shadows Into Light", cursive;
+  margin-top: 0;
 }
 
 /* .App-header {
@@ -133,4 +139,26 @@ h1 {
 .MuiList-root-139,
 nav.Directions-root-6 {
   box-shadow: 1px 1px 4px 0px #00000052;
+}
+
+@media only screen and (min-width: 1000px){
+  .overlay > h1 {
+    margin-top: 300px;
+    font-size: 80px;
+  }
+
+  .overlay > h2 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 999px){
+  .overlay > h1 {
+    margin-top: 200px;
+    font-size: 60px;
+  }
+
+  .overlay > h2 {
+    font-size: 35px;
+  }
 }

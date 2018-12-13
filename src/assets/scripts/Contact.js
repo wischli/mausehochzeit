@@ -35,6 +35,9 @@ const styles = theme => ({
   expandOpen: {
     transform: 'rotate(180deg)',
   },
+  root: {
+    margin: '12px 0',
+  }
 });
 
 class Contact extends React.Component {
@@ -47,7 +50,7 @@ class Contact extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div id="program">
         <Card className={classes.card}>
           <CardHeader
             title="Die Trauzeugen"
