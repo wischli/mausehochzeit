@@ -3,6 +3,7 @@ import React from 'react';
 import icon from '../../images/mouse-black-animal.svg';
 import '../styles/Menu.css';
 import { FormatListNumbered, Schedule, Palette, LocalHotel, Place, Info, AddComment } from '@material-ui/icons';
+import { Link} from 'react-scroll'
 
 class MyMenu extends React.Component {
   constructor(props){
@@ -52,7 +53,7 @@ class MyMenu extends React.Component {
 
   renderMenuItems = (state) => {
     return this.state.menuItems.map(item => {
-      return <a onClick={() => this.closeMenu()} className="menu-item" key={item.title} href={item.href}>{item.icon ? item.icon : ''}<div className="menu-text" style={{flex: 1}}>{item.title}</div></a>;
+      return <Link onClick={() => this.closeMenu()} className="menu-item" key={item.title} offset={-10} activeClass="active" to={item.href.replace('#','')} smooth={true} duration={200}>{item.icon ? item.icon : ''}<div className="menu-text" style={{flex: 1}}>{item.title}</div></Link>;
     });
   };
 

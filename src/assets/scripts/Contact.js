@@ -50,7 +50,7 @@ class Contact extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div id="program">
+      <div id="program" className="element">
         <Card className={classes.card}>
           <CardHeader
             title="Die Trauzeugen"

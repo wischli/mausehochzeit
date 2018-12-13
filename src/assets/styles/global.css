@@ -23,6 +23,10 @@ a:not(.bm-item) {
   font-weight: 600;
 }
 
+strong, b {
+  font-weight: 500;
+}
+
 /* a:not(.bm-item):hover {
   border-bottom: 2px solid #c1819f;
 } */
