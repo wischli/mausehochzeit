@@ -52,8 +52,8 @@ class ColorExample extends React.Component {
       <div id="colors">
         <Card className={classes.card}>
           <CardHeader
-            title="Farbanregungen"
-            subheader="Gedeckte Farben"
+            title="Garderobe"
+            subheader=""
           />
           <CardContent>
             <div>

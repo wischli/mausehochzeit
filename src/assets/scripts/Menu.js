@@ -21,9 +21,9 @@ class MyMenu extends React.Component {
           icon: <Place />
         },
         {
-          href : '#dosDonts',
-          title : 'Zu beachten',
-          icon: <Info />
+          href : '#unterkunft',
+          title : 'Schlafen in der Umgebung',
+          icon: <LocalHotel />
         },
         {
           href : '#timeline',
@@ -41,9 +41,9 @@ class MyMenu extends React.Component {
           icon: <AddComment />
         },
         {
-          href : '#unterkunft',
-          title : 'Schlafen in der Umgebung',
-          icon: <LocalHotel />
+          href : '#dosDonts',
+          title : 'Zu beachten',
+          icon: <Info />
         },
       ],
       isOpen : false,

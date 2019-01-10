@@ -72,6 +72,10 @@
   /* margin: 1px; */
 }
 
+.colorRow:not(:last-of-type){
+  margin-bottom: 1px;
+}
+
 /* background: -webkit-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, blue 66%, blue 100%);
 background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, blue 66%, blue 100%); */
 

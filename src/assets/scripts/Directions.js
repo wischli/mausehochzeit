@@ -96,7 +96,7 @@ class Directions extends React.Component {
           <CardContent>
             Wir verbringen den <strong>gesamten Hochzeitstag auf dem bezaubernden Gelände der Stadtscheune Buckow</strong>. Hier findet sowohl die freie Trauung, als auch die feuchtfröhliche Feier im Anschluss statt. Die Fahrtzeit beträgt bei Anreise mit Auto etwa 1h und mit den Öffentlichen etwa 1,5h.
           </CardContent>
-          <Iframe url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d310375.6079833099!2d13.497087357956977!3d52.573188679979566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef75d65cbafa2407!2sStadtscheune+Buckow!5e0!3m2!1sde!2sde!4v1547154405913"
+          <Iframe url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d310381.9891702643!2d13.450401183379793!3d52.5722713892324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef75d65cbafa2407!2sStadtscheune+Buckow!5e0!3m2!1sde!2sde!4v1547156121602"
             width="100%"
             height={iframeHeight}
             id="myId"
