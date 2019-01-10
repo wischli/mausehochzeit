@@ -60,6 +60,7 @@
   background-color: white;
   border-radius: 5px;
   margin-top: 15px;
+  padding: 5px;
 }
 
 .colorRow {
@@ -75,8 +76,6 @@
 background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, blue 66%, blue 100%); */
 
 .colorRow:nth-of-type(6) {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   background: #ffe8e9;
 }
 
@@ -97,6 +96,8 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
 }
 
  .colorRow:nth-of-type(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background: #e3f4f9;
 }
 
@@ -122,13 +123,19 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
 
 .colorBlocks {
   display: flex;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .colorBlock {
   display: inline-block;
   height: 60px;
   width: 25%;
-  margin-right: 2px;
+}
+
+.colorBlock:not(:last-of-type) {
+  margin-right: 5px;
 }
 
 .colorBlock:nth-of-type(1) {
