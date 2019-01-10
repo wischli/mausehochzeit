@@ -9,7 +9,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText   from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Email from '@material-ui/icons/Email';
-import Tada from 'react-reveal/Tada';
 
 const styles = theme => ({
   card: {
@@ -64,7 +63,6 @@ class Contact extends React.Component {
                 Wenn es also Dinge gibt, von denen wir nichts wissen sollen, dann sind sie eure Ansprechpartner.
               </div>
             </div>
-            <Tada>
             <div className={classes.root}>
               <List component="nav">
                 <ListItem button component="a" href="mailto:annekasten@gmx.net?subject=Mausehochzeit">
@@ -83,7 +81,6 @@ class Contact extends React.Component {
                 </ListItem>
               </List>
             </div>
-            </Tada>
             </div>
           </CardContent>
         </Card>

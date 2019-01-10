@@ -57,24 +57,14 @@ class ColorExample extends React.Component {
           />
           <CardContent>
             <div>
-              Wir würden uns sehr darüber freuen, wenn die Gäste in festlicher Garderobe und nicht einfach mit Jeans und abgenutzten Sneakern erscheinen würden.
-              Das soll nicht heißen, dass beispielsweise alle Männer im Anzug kommen müssen, eine <strong>schlichte schicke Chino und Hemd</strong>, ggfs noch mit Fliege, ist für uns schon festlich!
+                Wir wären entzückt, wenn ihr in einer schicken Garderobe erscheint. Ihr sollt euch aber wohl und nicht gestresst fühlen. Schick wäre für uns schon beispielsweise eine schlichte Hose & Hemd (Herren) oder Bluse (Damen).
             </div>
             <div style={{marginTop: 10}}>
               Wichtiger sind für uns jedoch die <strong>Farben eurer Kleidungsstücke</strong>, damit tollen Aufnahmen nichts im Wege steht und niemand außer dem Brautpaar heraussticht.
-              Daher bitten wir euch, auf gedeckte & pastellige Farben zurückzugreifen. Als Inspiration hier mal ein paar Farbbeispiele:
+              Eine große Freude macht ihr uns also mit gedeckten & pastelligen Farben, wie z.B. grau, beige und Co. Hier ein paar weitere Farbanregungen:
             </div>
             <Flip right>
               <div className="colorRows">
-                <div className="colorRow"></div>
-                <div className="colorRow"></div>
-                <div className="colorRow"></div>
-                <div className="colorRow"></div>
-                <div className="colorRow"></div>
-                <div className="colorRow"></div>
-                <div className="colorRow"></div>
-                <div className="colorRow"></div>
-                <div className="colorRow"></div>
                 <div className="colorRow"></div>
                 <div className="colorRow"></div>
                 <div className="colorRow"></div>
@@ -105,8 +95,6 @@ class ColorExample extends React.Component {
             <CardContent>
                 <h2>Unpassende Farben</h2>
                 <div className="colorBlocks">
-                  <div className="colorBlock"></div>
-                  <div className="colorBlock"></div>
                   <div className="colorBlock"></div>
                   <div className="colorBlock"></div>
                   <div className="colorBlock"></div>

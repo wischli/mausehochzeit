@@ -89,14 +89,14 @@ class Directions extends React.Component {
         <Card className={classes.card}>
           <CardHeader
             title="Die Hochzeitslocation"
-            subheader="Stadtscheune Buckow in der Märkische Schweiz"
+            subheader="Stadtscheune Buckow in der Märkischen Schweiz"
           />
         <BrowserView><img src={scheuneBuckow2} className="barn-desktop" alt="scheune-buckow"/></BrowserView>
           <MobileView><img src={scheuneBuckow} className="barn-mobile" alt="scheune-buckow" /></MobileView>
           <CardContent>
-            Wir verbringen den <strong>gesamten Hochzeitstag auf dem schönen Gelände der Stadtscheune Buckow</strong>. Hier findet sowohl die freie Trauung, als auch die feuchtfröhliche Feier im Anschluss statt. Die Fahrtzeit beträgt bei Anreise mit Auto etwa 1h und mit den Öffentlichen etwa 1,5h.
+            Wir verbringen den <strong>gesamten Hochzeitstag auf dem bezaubernden Gelände der Stadtscheune Buckow</strong>. Hier findet sowohl die freie Trauung, als auch die feuchtfröhliche Feier im Anschluss statt. Die Fahrtzeit beträgt bei Anreise mit Auto etwa 1h und mit den Öffentlichen etwa 1,5h.
           </CardContent>
-          <Iframe url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9699.399298433606!2d14.072156!3d52.572327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef75d65cbafa2407!2sStadtscheune+Buckow!5e0!3m2!1sen!2sde!4v1543577150211"
+          <Iframe url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d310375.6079833099!2d13.497087357956977!3d52.573188679979566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef75d65cbafa2407!2sStadtscheune+Buckow!5e0!3m2!1sde!2sde!4v1547154405913"
             width="100%"
             height={iframeHeight}
             id="myId"

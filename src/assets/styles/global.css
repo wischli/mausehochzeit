@@ -1,25 +1,12 @@
 html {
-  /* background-color: #4a5f5b; */
-  /* background-color: #d4e9ea; */
-  /* background: linear-gradient(90deg, #01a486 0, rgba(230, 230, 230, 0.4)); */
-  /* background: -webkit-gradient(linear, left top, right bottom, from(#00503d), to(#ffffff)) fixed; */
-  /* background: -webkit-repeating-radial-gradient(top left, circle, #a3c1b7, #f5f5f5 43%, #a3c1b7 73%) fixed; */
-  background: -webkit-repeating-linear-gradient(164deg, #a3c1b7, #f5f5f5 500px, #a3c1b7 1000px);
-  /* background:
-    linear-gradient(90deg, #629788, rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, #c0ded9, rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgb(69, 93, 89), rgba(0,0,255,0) 70.71%); */
   color: white;
-  /* background: -webkit-repeating-radial-gradient(top left, circle, #a3c1b7, #f5f5f5 57%, #a3c1b7 103%) fixed; */
-  /* background-attachment: fixed; */
-  /* background: rgb(89, 121, 112); */
+  background: -webkit-repeating-linear-gradient(164deg, #a3c1b7, #f5f5f5 500px, #a3c1b7 1000px);
   font-weight: 100;
-  scroll-behavior: smooth;
 }
 
 a:not(.bm-item) {
   text-decoration: none;
-  color: #c1819f;
+  color: #33a693;
   font-weight: 600;
 }
 
@@ -32,7 +19,7 @@ strong, b {
 } */
 
 button > span {
-  color: #c1819f;
+  color: #33a693;
    /* #678982; */
   font-weight: 600;
 }
@@ -165,4 +152,12 @@ nav.Directions-root-6 {
   .overlay > h2 {
     font-size: 35px;
   }
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background: #a2c5bd;
+  margin: auto;
+  border-radius: 100%;
 }

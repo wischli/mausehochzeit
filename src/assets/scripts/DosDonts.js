@@ -48,36 +48,39 @@ class DosDonts extends React.Component {
         <Card className={classes.card}>
           <CardHeader
             title="Unsere Wünsche"
-            subheader="Bitte beachten"
+            subheader=""
           />
           <CardContent>
             <div className="dosDonts">
               <Fade left>
-                <div>
+                <div style={{width:'45%'}}>
                   <div className="leftSide">
                   <h2>Do's</h2>
                   <ul>
                     <Fade left><li><CheckCircle /><span className="text">Zeit zum Durchatmen</span></li></Fade>
-                    <li><CheckCircle /><span className="text">Spaß & Vergnügen</span></li>
+                    <li><CheckCircle /><span className="text">Glückliche Gäste</span></li>
                     <li><CheckCircle /><span className="text">Tanz und Partylaune</span></li>
-                    <li><CheckCircle /><span className="text">Festliche Garderobe in pastelligen & gedeckten Farben (sieht auf Fotos einfach zauberhaft aus)</span></li>
+                    <li><CheckCircle /><span className="text">Beantwortung der Umfrage</span></li>
                   </ul>
               </div>
                 </div>
               </Fade>
               <Fade right>
-                <div>
+                <div style={{width:'55%'}}>
                   <div className="rightSide">
                     <h2>Dont's</h2>
                     <ul>
                       <li><Cancel /><span className="text">Zu viel Progamm</span></li>
                       <li><Cancel /><span className="text">Überraschungen, die nicht mit den Trauzeugen abgesprochen sind</span></li>
                       <li><Cancel /><span className="text">Schlagermusik wie Helene Fischer</span></li>
-                      <li><Cancel /><span className="text">Knallige Farben, weiß oder schwarz (außer bei Herrenanzügen)</span></li>
+                      <li><Cancel /><span className="text">Kleidung mit knalligen Farben</span></li>
                     </ul>
                 </div>
                 </div>
               </Fade>
+            </div>
+            <div>
+              P.S.: Eure Anwesenheit ist das größte Geschenk für uns. Wem das nicht genug ist, der hilft uns am meisten durch eine kleine Spende für unsere Flitterwochen.
             </div>
           </CardContent>
         </Card>
