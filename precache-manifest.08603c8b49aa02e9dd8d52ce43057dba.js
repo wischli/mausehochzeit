@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/bellevue-review.2a2a3ec2.png"
   },
   {
-    "revision": "296b643d9fc1451d25fa",
-    "url": "/static/css/main.0f3a4f07.chunk.css"
+    "revision": "62f6e4e994b56fcbb7ce",
+    "url": "/static/css/main.4d3ffd4b.chunk.css"
   },
   {
-    "revision": "23f373a9300b048de5a6",
-    "url": "/static/js/1.23f373a9.chunk.js"
+    "revision": "1033b47f6a56adfb8bb3",
+    "url": "/static/js/1.1033b47f.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/StadtscheuneBuckow2.58a65399.jpg"
   },
   {
-    "revision": "296b643d9fc1451d25fa",
-    "url": "/static/js/main.296b643d.chunk.js"
+    "revision": "62f6e4e994b56fcbb7ce",
+    "url": "/static/js/main.62f6e4e9.chunk.js"
   },
   {
     "revision": "122f92424800cd4aef58915981671888",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/sunday.565eef62.ttf"
   },
   {
-    "revision": "8fca13f378ffeb39ea817db049167c71",
+    "revision": "6ece812d1af39d108a3e2e31a293aab6",
     "url": "/index.html"
   }
 ];
