@@ -36,22 +36,22 @@ class App extends Component {
               <Welcome />
             </Fade>
             <Fade>
-              <Party />
-            </Fade>
-            <Fade>
               <Directions />
             </Fade>
             <Fade>
               <Accomodation />
             </Fade>
             <Fade>
+              <Party />
+            </Fade>
+            <Fade>
+              <ColorExample />
+            </Fade>
+            <Fade>
               <Contact />
             </Fade>
             <Fade>
               <DosDonts />
-            </Fade>
-            <Fade>
-              <ColorExample />
             </Fade>
           </div>
         </main>

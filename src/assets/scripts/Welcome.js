@@ -59,7 +59,7 @@ class Welcome extends React.Component {
         <Card className={classes.card}>
           <CardHeader
             title="Aktuelles"
-            subheader="12.01.2019 - Willkommen"
+            subheader="12.01.2019 - Willkommen liebe Gäste"
           />
           <CardContent>
             <div className="welcome-card">
