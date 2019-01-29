@@ -15,7 +15,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText   from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Fade from 'react-reveal/Fade';
-import { LooksOne, LooksTwo, Looks3, Looks4, Looks5, MusicNote, Pets, LocalDining } from '@material-ui/icons';
+import { LooksOne, LooksTwo, Looks3, Looks4, Looks5, MusicNote, Mood, LocalDining } from '@material-ui/icons';
 
 const styles = theme => ({
   card: {
@@ -126,23 +126,23 @@ class Party extends React.Component {
                 </ListItem>
                 <ListItem button divider>
                   <ListItemIcon>
-                    <MusicNote />
-                  </ListItemIcon>
-                  <ListItemText>
-                    (Livemusik)
-                  </ListItemText>
-                </ListItem>
-                <ListItem button divider>
-                  <ListItemIcon>
                   <LocalDining />
                   </ListItemIcon>
                   <ListItemText>
                     Abendessen
                   </ListItemText>
                 </ListItem>
+                <ListItem button divider>
+                  <ListItemIcon>
+                    <MusicNote />
+                  </ListItemIcon>
+                  <ListItemText>
+                    (Livemusik)
+                  </ListItemText>
+                </ListItem>
                 <ListItem button>
                   <ListItemIcon>
-                    <Pets />
+                    <Mood />
                   </ListItemIcon>
                   <ListItemText>
                     Partyyyyyyy
