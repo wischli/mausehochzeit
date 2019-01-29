@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/sunday.565eef62.ttf"
   },
   {
-    "revision": "c702b42ee5f180c6f6db4dbaf884eff9",
+    "revision": "e14ec4fdc5260fa819e3a24e940a6411",
     "url": "/index.html"
   }
 ];
