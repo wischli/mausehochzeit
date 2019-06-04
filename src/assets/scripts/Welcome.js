@@ -12,7 +12,6 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Wc from "@material-ui/icons/Wc";
-import Commute from "@material-ui/icons/Commute";
 import classnames from "classnames";
 
 const styles = theme => ({
