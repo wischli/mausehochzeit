@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 class Expire extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {visible:false};
+    this.state = { visible: false };
   }
 
   componentWillReceiveProps(nextProps) {
@@ -11,7 +11,7 @@ class Expire extends React.Component {
     if (nextProps.children !== this.props.children) {
       this.setTimer();
       // this.setState({visible: true});
-      this.setState({visible: false});
+      this.setState({ visible: false });
     }
   }
 
@@ -22,19 +22,25 @@ class Expire extends React.Component {
   setTimer() {
     // clear any existing timer
     if (this._timer != null) {
-      clearTimeout(this._timer)
+      clearTimeout(this._timer);
     }
 
     // hide after `delay` milliseconds
-    this._timer = setTimeout(function(){
-      this.setState({visible: true});
-      this._timer = null;
-    }.bind(this), this.props.delayShow);
+    this._timer = setTimeout(
+      function() {
+        this.setState({ visible: true });
+        this._timer = null;
+      }.bind(this),
+      this.props.delayShow
+    );
 
-    this._timer = setTimeout(function(){
-      this.setState({visible: false});
-      this._timer = null;
-    }.bind(this), this.props.delayHide);
+    this._timer = setTimeout(
+      function() {
+        this.setState({ visible: false });
+        this._timer = null;
+      }.bind(this),
+      this.props.delayHide
+    );
   }
 
   componentWillUnmount() {
@@ -42,9 +48,7 @@ class Expire extends React.Component {
   }
 
   render() {
-    return this.state.visible
-      ? <div>{this.props.children}</div>
-      : <span />;
+    return this.state.visible ? <div>{this.props.children}</div> : <span />;
   }
 }
 

@@ -20,7 +20,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import Fade from 'react-reveal/Fade';
-import Tada from 'react-reveal/Tada';
 import { LocalParking, Train, LocationOn, TimeToLeave } from '@material-ui/icons';
 
 const styles = theme => ({
@@ -118,11 +117,9 @@ class Directions extends React.Component {
                   <ListItemText>
                     <div className="space-between align-center">
                       Dauer: Etwa 50min
-                      <Tada>
                         <Button variant="contained" color="primary" className={classes.button} href="https://www.google.com/maps/dir//52.572327,14.072156/@52.572327,14.072156,14z?hl=de-DE/" target="_blank" rel="noopener noreferrer">
                           Route berechnen
                         </Button>
-                      </Tada>
                     </div>
                   </ListItemText>
                 </ListItem>
@@ -134,11 +131,9 @@ class Directions extends React.Component {
                   <ListItemText>
                     <div className="space-between align-center">
                       Dauer: Etwa 90min
-                      <Tada>
                         <Button variant="contained" color="primary" className={classes.button} href="https://www.google.com/maps/dir//52.572327,14.072156/@52.5723334,14.0677786,16z/data=!3m1!4b1!4m2!4m1!3e3?hl=de-DE" target="_blank" rel="noopener noreferrer">
                           Route berechnen
                         </Button>
-                      </Tada>
                     </div>
                     <span className="text-grey">Regio RB26 bis Müncheberg, dann Bus 928 bis Buckow</span>
                   </ListItemText>

@@ -322,3 +322,7 @@ h3 {
   font-size: 1.4rem;
   margin: 15px;
 }
+
+.welcome-card > div {
+  margin-bottom: 10px;
+}

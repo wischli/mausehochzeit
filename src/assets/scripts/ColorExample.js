@@ -10,7 +10,6 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 // import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 
 const styles = theme => ({
@@ -63,7 +62,6 @@ class ColorExample extends React.Component {
               Wichtiger sind für uns jedoch die <strong>Farben eurer Kleidungsstücke</strong>, damit tollen Aufnahmen nichts im Wege steht und niemand außer dem Brautpaar heraussticht.
               Eine große Freude macht ihr uns also mit gedeckten & pastelligen Farben, wie z.B. grau, beige und Co. Hier ein paar weitere Farbanregungen:
             </div>
-            <Flip right>
               <div className="colorRows">
                 <div className="colorRow"></div>
                 <div className="colorRow"></div>
@@ -75,7 +73,6 @@ class ColorExample extends React.Component {
                 <div className="colorRow"></div>
                 <div className="colorRow"></div>
               </div>
-            </Flip>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
             <IconButton

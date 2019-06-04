@@ -1,24 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import ListItemText from '@material-ui/core/ListItemText';
-import Checkbox from '@material-ui/core/Checkbox';
-import IconButton from '@material-ui/core/IconButton';
+import React from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
+import ListItemText from "@material-ui/core/ListItemText";
+import Checkbox from "@material-ui/core/Checkbox";
+import IconButton from "@material-ui/core/IconButton";
 
 const styles = theme => ({
   root: {
-    width: '100%',
-    maxWidth: '100%',
-    backgroundColor: theme.palette.background.paper,
-  },
+    width: "100%",
+    maxWidth: "100%",
+    backgroundColor: theme.palette.background.paper
+  }
 });
 
 class CheckboxList extends React.Component {
   state = {
-    checked: [0],
+    checked: [0]
   };
 
   handleToggle = value => () => {
@@ -33,7 +33,7 @@ class CheckboxList extends React.Component {
     }
 
     this.setState({
-      checked: newChecked,
+      checked: newChecked
     });
   };
 
@@ -43,7 +43,13 @@ class CheckboxList extends React.Component {
     return (
       <List className={classes.root}>
         {[0, 1, 2, 3].map(value => (
-          <ListItem key={value} role={undefined} dense button onClick={this.handleToggle(value)}>
+          <ListItem
+            key={value}
+            role={undefined}
+            dense
+            button
+            onClick={this.handleToggle(value)}
+          >
             <Checkbox
               checked={this.state.checked.indexOf(value) !== -1}
               tabIndex={-1}
@@ -51,8 +57,7 @@ class CheckboxList extends React.Component {
             />
             <ListItemText primary={`Line item ${value + 1}`} />
             <ListItemSecondaryAction>
-              <IconButton aria-label="Comments">
-              </IconButton>
+              <IconButton aria-label="Comments" />
             </ListItemSecondaryAction>
           </ListItem>
         ))}
@@ -62,7 +67,7 @@ class CheckboxList extends React.Component {
 }
 
 CheckboxList.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(CheckboxList);
