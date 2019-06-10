@@ -326,3 +326,7 @@ h3 {
 .welcome-card > div {
   margin-bottom: 10px;
 }
+
+.welcome-card strong {
+  color: #44aa98;
+}
