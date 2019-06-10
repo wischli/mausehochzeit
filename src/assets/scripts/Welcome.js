@@ -12,6 +12,7 @@ import Collapse from "@material-ui/core/Collapse";
 import IconButton from "@material-ui/core/IconButton";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Wc from "@material-ui/icons/Wc";
+import FavoriteBorder from "@material-ui/icons/FavoriteBorder";
 import classnames from "classnames";
 
 const styles = theme => ({
@@ -43,12 +44,13 @@ const styles = theme => ({
   },
   expandOpen: {
     transform: "rotate(180deg)"
-  },
+  }
 });
 
 const welcomeCardStyle = {
-  lineHeight: "130%", padding: window.innerWidth < 800 ? '20px 20px 0' : '30px 30px 0'
-}
+  lineHeight: "130%",
+  padding: window.innerWidth < 800 ? "20px 20px 0" : "30px 30px 0"
+};
 
 const news = [
   <div className="welcome-card" style={welcomeCardStyle}>
@@ -67,26 +69,92 @@ const news = [
         Gästeanzahl mitteilen müssen.
       </strong>
     </div>
-
     <div>
-      Außerdem hoffen wir, dass ihr alle eine nette <strong>Unterkunft</strong>{" "}
-      gefunden habt.
+      Außerdem hoffen wir, dass ihr alle eine nette Unterkunft gefunden habt?
     </div>
-    <div style={{paddingTop: 15, borderTop: '1px solid #b1cac2'}}>Zuletzt noch ein paar nützliche Informationen für euch:
+    <div style={{ paddingTop: 15, borderTop: "1px solid #b1cac2" }}>
+      Nun noch ein paar nützliche Informationen für euch:
     </div>
-    <div style={{paddingBottom: 5, display: 'flex', flexDirection: window.innerWidth < 800 ? 'column' : 'row', alignItems: 'center'}}>
-      <Wc style={{marginBottom: window.innerWidth < 800 ? 10 : 0, marginRight: 20, padding: 5, background: '#6f8781', color: 'white', borderRadius: '100%'}} />
-      <p style={{margin: 0}}>
-        Wir werden am Freitag mit dem Aufbau in der Location beginnen. Am
-        Hochzeitstag beginnt das Spektakel um <strong>11 Uhr</strong> mit der
-        freien Trauung im <strong>Garten der Stadtscheune</strong>. Es wäre gut,
-        wenn sich alle Gäste bereits <strong>10:45 Uhr</strong> im Garten
-        einfinden könnten. Für Getränke und Snacks ist jederzeit gesorgt!
-      </p>
+    <div
+      style={{
+        paddingBottom: 10,
+        display: "flex",
+        marginBottom: window.innerWidth < 800 ? 10 : 0,
+        flexDirection: window.innerWidth < 800 ? "column" : "row",
+        // flexDirection: window.innerWidth < 800 ? "column" : "row",
+        alignItems: "center"
+      }}
+    >
+      <Wc
+        style={{
+          marginRight: 20,
+          padding: 5,
+          background: "#6f8781",
+          color: "white",
+          borderRadius: "100%"
+        }}
+      />
+      <div>
+        <p>
+          Am Hochzeitstag beginnt das Spektakel um <strong>11 Uhr</strong> mit
+          der freien Trauung im <strong>Garten der Stadtscheune</strong>. Es
+          wäre gut, wenn sich alle Gäste bereits <strong>10:45 Uhr</strong> im
+          Garten einfinden könnten. Für Getränke und Snacks ist jederzeit
+          gesorgt!
+        </p>
+        <p style={{ margin: 0 }}>
+          Bitte denkt an wetterfeste Kleidung bzw. Regenschirme, falls das
+          Wetter nicht so mitspielt, wie wir uns das wünschen. Ein wichtiger
+          Hinweis an die Ladies: Im Garten ist der Boden mit Rasen und altem
+          Pflasterstein eher “holprig”, daher raten wir von High Heels mit
+          Pfennigabsätzen ab.
+        </p>
+      </div>
     </div>
-    <div style={{paddingTop: 15, borderTop: '1px solid #b1cac2'}}>
+    <div
+      style={{
+        paddingTop: 15,
+        borderTop: "1px solid #b1cac2",
+        display: "flex",
+        marginBottom: window.innerWidth < 800 ? 10 : 0,
+        flexDirection: window.innerWidth < 800 ? "column" : "row",
+        // flexDirection: window.innerWidth < 800 ? "column" : "row",
+        alignItems: "center",
+        borderBottom: "1px solid #b1cac2",
+        marginBottom: 10
+      }}
+    >
+      <FavoriteBorder
+        style={{
+          marginRight: 20,
+          padding: 5,
+          background: "#6f8781",
+          color: "white",
+          borderRadius: "100%"
+        }}
+      />
+      <div>
+        <p style={{ marginTop: 0 }}>
+          Wer Lust und Zeit hat, ist sehr gerne zu unserer{" "}
+          <strong>
+            standesamtlichen Trauung am Freitag, den 30.08.2019 im Rathaus
+            Lichtenberg
+          </strong>{" "}
+          eingeladen. Dafür müsstet ihr um <strong>10 Uhr</strong> vor Ort sein.
+        </p>
+        <p style={{ marginTop: 0 }}>
+          Anschließend laden wir zu uns in die{" "}
+          <strong>Mausewohnung zu einem kleinen Umtrunk</strong> mit Buffet ein
+          und begießen unsere amtliche Vermählung zur neuen Familie
+          Freudenberger. Bitte auch hier eine{" "}
+          <strong>kurze Rückmeldung an uns, wer mit dabei sein möchte</strong>,
+          da es nur eine begrenzte Anzahl an Plätzen im Trauungszimmer gibt.
+        </p>
+      </div>
+    </div>
+    <div>
       Falls es darüber hinaus noch{" "}
-      <strong style={{fontWeight: 800}}>
+      <strong style={{ fontWeight: 800, color: "black" }}>
         Fragen, Sorgen oder Anmerkungen gibt, dann bitte sprecht uns direkt an
       </strong>
       .
@@ -94,7 +162,7 @@ const news = [
     <div id="survey">
       Liebst,
       <br />
-      Charline & William
+      🐭 Charline & William 🐭
     </div>
   </div>,
   <div className="welcome-card" style={welcomeCardStyle}>
@@ -106,8 +174,8 @@ const news = [
     <div>
       <strong>
         Dafür wäre es großartig, wenn ihr an unserer kleinen Umfrage (nur 5
-          kurze Fragen) teilnehmt.
-        </strong>
+        kurze Fragen) teilnehmt.
+      </strong>
     </div>
     <div>
       Da wir erst am Anfang der Planung stehen, wird sich die Seite nach und
@@ -140,7 +208,7 @@ class Welcome extends React.Component {
         <Card className={classes.card}>
           <CardHeader
             title="Aktuelles"
-            subheader="04.06.2019 - Es gibt Neuigkeiten"
+            subheader="10.06.2019 - Es gibt Neuigkeiten"
           />
           {news[0]}
           <CardContent />
@@ -153,15 +221,15 @@ class Welcome extends React.Component {
               aria-expanded={this.state.expanded}
               aria-label="Show more"
             >
-              {!this.state.expanded ? "Zeige ältere Nachrichten" : "Klapp mich ein"}
+              {!this.state.expanded
+                ? "Zeige ältere Nachrichten & Umfrage"
+                : "Klapp mich ein"}
               <ExpandMoreIcon />
             </IconButton>
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
             <Fade left>
-              <CardHeader
-                subheader="12.01.2019 - Willkommen liebe Gäste"
-              />
+              <CardHeader subheader="12.01.2019 - Willkommen liebe Gäste" />
               {news[1]}
               <Iframe
                 url="https://goo.gl/forms/aEKZI3YXlngHgD3C3"
