@@ -1,21 +1,18 @@
 import React, { Component } from "react";
-import "./App.css";
-import "./assets/styles/Menu.css";
-import "./assets/styles/cards.css";
-// import Button from '@material-ui/core/Button';
-// import Menu from './assets/Menu';
-import Menu from "./assets/scripts/Menu";
-import Expire from "./assets/scripts/Expire";
-// import Zoom from 'react-reveal/Zoom';
-import Header from "./assets/scripts/Header";
-import Directions from "./assets/scripts/Directions";
-import ColorExample from "./assets/scripts/ColorExample";
-import Welcome from "./assets/scripts/Welcome";
-import Party from "./assets/scripts/Party";
-import DosDonts from "./assets/scripts/DosDonts";
-import Contact from "./assets/scripts/Contact";
-import Accomodation from "./assets/scripts/Accomodation";
 import Fade from "react-reveal/Fade";
+import "./App.css";
+import Accomodation from "./assets/components/Accomodation";
+import ColorExample from "./assets/components/ColorExample";
+import Contact from "./assets/components/Contact";
+import Directions from "./assets/components/Directions";
+import DosDonts from "./assets/components/DosDonts";
+import Expire from "./assets/components/Expire";
+import Header from "./assets/components/Header";
+import Menu from "./assets/components/Menu";
+import Party from "./assets/components/Party";
+import Welcome from "./assets/components/Welcome";
+import "./assets/styles/cards.css";
+import "./assets/styles/Menu.css";
 
 class App extends Component {
   render() {

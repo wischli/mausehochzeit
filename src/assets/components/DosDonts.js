@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
-import { CheckCircle, Cancel } from "@material-ui/icons";
+import CardHeader from "@material-ui/core/CardHeader";
+import { withStyles } from "@material-ui/core/styles";
+import { Cancel, CheckCircle } from "@material-ui/icons";
+import PropTypes from "prop-types";
+import React from "react";
 import Fade from "react-reveal/Fade";
 
 const styles = theme => ({

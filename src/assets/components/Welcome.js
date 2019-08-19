@@ -55,22 +55,40 @@ const welcomeCardStyle = {
 const news = [
   <div className="welcome-card" style={welcomeCardStyle}>
     <div>
-      Aiaiaiaiaia, bald ist er da! Und wir müssen gar nicht mehr so lange
-      warten, bis wir unseren schönsten Tag mit euch verbringen dürfen. Wir
-      möchten uns an dieser Stelle bereits für eure riesengroße Anteilnahme
-      bedanken, die ihr uns alle bisher entgegengebracht habt. Das lässt unsere
-      Vorfreude nur noch größer werden! Nun müssen allmählich die Details
-      geplant werden...{" "}
-    </div>
-    <div>
-      <strong>
-        Zunächst bitten wir diejenigen, die uns noch keine finale Zusage geben
-        können, sich bei uns zu melden, da wir der Stadtscheune die exakte
-        Gästeanzahl mitteilen müssen.
-      </strong>
-    </div>
-    <div>
-      Außerdem hoffen wir, dass ihr alle eine nette Unterkunft gefunden habt?
+      Liebe Gäste, in weniger als einer Woche ist es endlich so weit! Anbei noch
+      mal ein paar kleine Informationen für Freitag und die Essensituation am
+      Samstag. Wir hoffen, dass ihr alle gut <a href="#location">nach Buckow kommt</a> und freuen uns schon riesig darauf, den Tag mit euch zu verbringen.
+      <h3>Freitag</h3>
+      <div>
+        Natürlich wollen wir am Abend vor der Hochzeit noch mal Zeit mit allen,
+        die am Freitag schon anreisen, verbringen. Dies wird vermutlich im <b>öffentlichen Schlosspark</b>, welcher direkt an die Stadtscheune
+        angrenzt, passieren. Eine genaue Uhrzeit können wir noch nicht
+        festlegen, da wir mit dem Aufbau zu tun haben, wir schätzen aber{" "}
+        <b>gegen 19 Uhr</b>. Es wird dann belegte Brötchen, Kartoffelsalat und
+        ähnliches geben, zubereitet von unseren lieben Omis. Natürlich gibt es
+        auch ein wenig Bier, Wein und alkoholfreie Getränke. Die Zusammenkunft
+        soll aber{" "}
+        <b>
+          weder ausarten noch lange gehen, damit jeder frisch für die Hochzeit
+          ist
+        </b>
+        . Ihr sollt am nächsten Tag ja spätestens 10:30 Uhr an der Scheune sein
+        und wir werden schon sehr früh aufstehen müssen.
+      </div>
+      <h3>Samstag</h3>
+      <div>
+        Wer morgens nicht wenig isst, sollte bitte versuchen etwas zu <b>frühstücken</b>. Es gibt zwar Schnittchen oder ähnliches nach der
+        Trauung, aber wir wissen nicht genau wie viele, vermutlich nicht genug,
+        damit 50 Leute einen leeren Magen füllen können. Wir haben der Location
+        klargemacht, dass <b>immer etwas zu essen da sein soll</b>, aber es
+        liegt eben nicht in unserer Macht wie viel. Gegen 15 Uhr gibt es Kuchen
+        und Abendbrot gegen 17:45 Uhr.
+        <p>
+          Unweit von der Scheune (ca. 5 Minuten Fußweg) gibt es einen{" "}
+          <a href="https://goo.gl/maps/tzYCceEyB8u4vrmp8">Bäcker</a>, der ab 7
+          Uhr geöffnet hat.
+        </p>
+      </div>
     </div>
     <div style={{ paddingTop: 15, borderTop: "1px solid #b1cac2" }}>
       Nun noch ein paar nützliche Informationen für euch:
@@ -121,7 +139,6 @@ const news = [
         // flexDirection: window.innerWidth < 800 ? "column" : "row",
         alignItems: "center",
         borderBottom: "1px solid #b1cac2",
-        marginBottom: 10
       }}
     >
       <FavoriteBorder
@@ -166,6 +183,16 @@ const news = [
     </div>
   </div>,
   <div className="welcome-card" style={welcomeCardStyle}>
+    <h3>10.06.19 - Es gibt Neuigkeiten</h3>
+    <div>
+      Aiaiaiaiaia, bald ist er da! Und wir müssen gar nicht mehr so lange
+      warten, bis wir unseren schönsten Tag mit euch verbringen dürfen. Wir
+      möchten uns an dieser Stelle bereits für eure riesengroße Anteilnahme
+      bedanken, die ihr uns alle bisher entgegengebracht habt. Das lässt unsere
+      Vorfreude nur noch größer werden! Nun müssen allmählich die Details
+      geplant werden...{" "}
+    </div>
+    <h3>12.01.2019 - Willkommen liebe Gäste</h3>
     <div>
       Wir können ihn kaum erwarten… Aber um den Tag der Tage für und mit euch am
       besten zu planen, habt ihr auf dieser Seite die Möglichkeit alle wichtigen
@@ -208,7 +235,7 @@ class Welcome extends React.Component {
         <Card className={classes.card}>
           <CardHeader
             title="Aktuelles"
-            subheader="10.06.2019 - Es gibt Neuigkeiten"
+            subheader="19.08.2019 - Nur noch 5 Tage"
           />
           {news[0]}
           <CardContent />
@@ -229,7 +256,7 @@ class Welcome extends React.Component {
           </CardActions>
           <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
             <Fade left>
-              <CardHeader subheader="12.01.2019 - Willkommen liebe Gäste" />
+              <CardHeader subheader="Ältere News" />
               {news[1]}
               <Iframe
                 url="https://goo.gl/forms/aEKZI3YXlngHgD3C3"

@@ -1,24 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
+import CardHeader from "@material-ui/core/CardHeader";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import { withStyles } from "@material-ui/core/styles";
+import { LocalDining, Looks3, Looks4, Looks5, LooksOne, LooksTwo, Mood, MusicNote } from "@material-ui/icons";
+import PropTypes from "prop-types";
+import React from "react";
 import Fade from "react-reveal/Fade";
-import {
-  LooksOne,
-  LooksTwo,
-  Looks3,
-  Looks4,
-  Looks5,
-  MusicNote,
-  Mood,
-  LocalDining
-} from "@material-ui/icons";
 
 const styles = theme => ({
   card: {
