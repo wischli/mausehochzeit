@@ -1,7 +1,7 @@
 import React from "react";
-import MobileTeaser from "../../images/MausehochzeitTeaser_mobile_2.jpg";
-import DesktopTeaser from "../../images/MausehochzeitTeaser_desktop.jpg";
 import { BrowserView, MobileView } from "react-device-detect";
+import DesktopTeaser from "../../images/MausehochzeitTeaser_desktop.jpg";
+import MobileTeaser from "../../images/MausehochzeitTeaser_mobile_2.jpg";
 
 const dateDiff = () => {
   const t1 = new Date("Sat Aug 24 2019 11:00:00 GMT+0200");

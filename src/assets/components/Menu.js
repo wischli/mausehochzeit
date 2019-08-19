@@ -1,17 +1,9 @@
-import { stack as Menu } from "react-burger-menu";
+import { AddComment, FormatListNumbered, Info, LocalHotel, Palette, Place, Schedule } from "@material-ui/icons";
 import React from "react";
+import { stack as Menu } from "react-burger-menu";
+import { Link } from "react-scroll";
 import icon from "../../images/mouse-black-animal.svg";
 import "../styles/Menu.css";
-import {
-  FormatListNumbered,
-  Schedule,
-  Palette,
-  LocalHotel,
-  Place,
-  Info,
-  AddComment
-} from "@material-ui/icons";
-import { Link } from "react-scroll";
 
 class MyMenu extends React.Component {
   constructor(props) {
