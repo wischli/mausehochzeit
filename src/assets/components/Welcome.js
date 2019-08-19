@@ -116,7 +116,7 @@ const news = [
         <p>
           Am Hochzeitstag beginnt das Spektakel um <strong>11 Uhr</strong> mit
           der freien Trauung im <strong>Garten der Stadtscheune</strong>. Es
-          wäre gut, wenn sich alle Gäste bereits <strong>10:45 Uhr</strong> im
+          wäre gut, wenn sich alle Gäste bereits <strong>10:30 Uhr</strong> im
           Garten einfinden könnten. Für Getränke und Snacks ist jederzeit
           gesorgt!
         </p>
@@ -136,7 +136,6 @@ const news = [
         display: "flex",
         marginBottom: window.innerWidth < 800 ? 10 : 0,
         flexDirection: window.innerWidth < 800 ? "column" : "row",
-        // flexDirection: window.innerWidth < 800 ? "column" : "row",
         alignItems: "center",
         borderBottom: "1px solid #b1cac2",
       }}
