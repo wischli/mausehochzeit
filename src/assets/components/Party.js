@@ -89,20 +89,20 @@ class Party extends React.Component {
                     <ListItemIcon>
                       <Looks5 />
                     </ListItemIcon>
-                    <ListItemText>16:00 - Zeit für Programm</ListItemText>
+                    <ListItemText>15:30 - Zeit für Programm</ListItemText>
                   </ListItem>
                   <ListItem button divider>
                     <ListItemIcon>
                       <LocalDining />
                     </ListItemIcon>
-                    <ListItemText>17:30 - Abendessen</ListItemText>
+                    <ListItemText>18:00 - Abendessen</ListItemText>
                   </ListItem>
                   <ListItem button divider>
                     <ListItemIcon>
                       <MusicNote />
                     </ListItemIcon>
                     <ListItemText>
-                      19:00 - Hochzeitstanz & Livemusik der River Rats
+                      19:45 - Hochzeitstanz & Livemusik der River Rats
                     </ListItemText>
                   </ListItem>
                   <ListItem button>
