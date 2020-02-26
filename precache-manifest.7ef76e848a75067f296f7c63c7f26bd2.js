@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ddfe4a5cbba5a633b9c03b7929ff6f2",
+    "revision": "7169e6271372b8907dfe39f2123226ba",
     "url": "/mausehochzeit/index.html"
   },
   {
-    "revision": "cd29e0abe24e9dada738",
-    "url": "/mausehochzeit/static/css/main.b63869b5.chunk.css"
+    "revision": "0ca09f41410b7fbd746e",
+    "url": "/mausehochzeit/static/css/main.2c1d59a2.chunk.css"
   },
   {
-    "revision": "2015b233cd4fc2ab6a79",
-    "url": "/mausehochzeit/static/js/2.932c9554.chunk.js"
+    "revision": "19d56c967067a8851061",
+    "url": "/mausehochzeit/static/js/2.1d26150f.chunk.js"
   },
   {
-    "revision": "cd29e0abe24e9dada738",
-    "url": "/mausehochzeit/static/js/main.84db0dcc.chunk.js"
+    "revision": "32528a2b1a31145350dc86f8d1d16efb",
+    "url": "/mausehochzeit/static/js/2.1d26150f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fd3ffcfd12c76d8f33e8",
-    "url": "/mausehochzeit/static/js/runtime~main.e506041c.js"
+    "revision": "0ca09f41410b7fbd746e",
+    "url": "/mausehochzeit/static/js/main.241a3bd3.chunk.js"
+  },
+  {
+    "revision": "cacc192d6032ea6f96c4",
+    "url": "/mausehochzeit/static/js/runtime-main.cfd08612.js"
   },
   {
     "revision": "af532ecc0a8f90ee9563193302ab81df",

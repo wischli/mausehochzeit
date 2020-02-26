@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/mausehochzeit/static/css/main.b63869b5.chunk.css",
-    "main.js": "/mausehochzeit/static/js/main.84db0dcc.chunk.js",
-    "main.js.map": "/mausehochzeit/static/js/main.84db0dcc.chunk.js.map",
-    "runtime~main.js": "/mausehochzeit/static/js/runtime~main.e506041c.js",
-    "runtime~main.js.map": "/mausehochzeit/static/js/runtime~main.e506041c.js.map",
-    "static/js/2.932c9554.chunk.js": "/mausehochzeit/static/js/2.932c9554.chunk.js",
-    "static/js/2.932c9554.chunk.js.map": "/mausehochzeit/static/js/2.932c9554.chunk.js.map",
+    "main.css": "/mausehochzeit/static/css/main.2c1d59a2.chunk.css",
+    "main.js": "/mausehochzeit/static/js/main.241a3bd3.chunk.js",
+    "main.js.map": "/mausehochzeit/static/js/main.241a3bd3.chunk.js.map",
+    "runtime-main.js": "/mausehochzeit/static/js/runtime-main.cfd08612.js",
+    "runtime-main.js.map": "/mausehochzeit/static/js/runtime-main.cfd08612.js.map",
+    "static/js/2.1d26150f.chunk.js": "/mausehochzeit/static/js/2.1d26150f.chunk.js",
+    "static/js/2.1d26150f.chunk.js.map": "/mausehochzeit/static/js/2.1d26150f.chunk.js.map",
     "index.html": "/mausehochzeit/index.html",
-    "precache-manifest.3bac15c5aef6b9e1b88ba3bb6dac1ccd.js": "/mausehochzeit/precache-manifest.3bac15c5aef6b9e1b88ba3bb6dac1ccd.js",
+    "precache-manifest.7ef76e848a75067f296f7c63c7f26bd2.js": "/mausehochzeit/precache-manifest.7ef76e848a75067f296f7c63c7f26bd2.js",
     "service-worker.js": "/mausehochzeit/service-worker.js",
-    "static/css/main.b63869b5.chunk.css.map": "/mausehochzeit/static/css/main.b63869b5.chunk.css.map",
+    "static/css/main.2c1d59a2.chunk.css.map": "/mausehochzeit/static/css/main.2c1d59a2.chunk.css.map",
+    "static/js/2.1d26150f.chunk.js.LICENSE.txt": "/mausehochzeit/static/js/2.1d26150f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/mausehochzeit/static/media/sunday.565eef62.ttf",
     "static/media/MausehochzeitTeaser_desktop.jpg": "/mausehochzeit/static/media/MausehochzeitTeaser_desktop.be9228a6.jpg",
     "static/media/MausehochzeitTeaser_mobile_2.jpg": "/mausehochzeit/static/media/MausehochzeitTeaser_mobile_2.a7cbd83a.jpg",
@@ -23,5 +24,11 @@
     "static/media/stobbermuehle-review.png": "/mausehochzeit/static/media/stobbermuehle-review.5b6d1726.png",
     "static/media/strandhotel-buckow-review.png": "/mausehochzeit/static/media/strandhotel-buckow-review.0e36ac88.png",
     "static/media/vier-jahreszeiten-review.png": "/mausehochzeit/static/media/vier-jahreszeiten-review.112479bd.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cfd08612.js",
+    "static/js/2.1d26150f.chunk.js",
+    "static/css/main.2c1d59a2.chunk.css",
+    "static/js/main.241a3bd3.chunk.js"
+  ]
 }
