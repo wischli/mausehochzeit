@@ -7,7 +7,6 @@
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "gh-pages": "^2.0.1",
-    "google-map-react": "^1.1.4",
     "preact": "^8.4.2",
     "preact-compat": "^3.18.5",
     "react": "^16.8.6",
@@ -33,12 +32,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"],
   "main": "index.js",
   "license": "MIT",
   "jshintConfig": {
