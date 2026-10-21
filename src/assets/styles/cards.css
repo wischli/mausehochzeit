@@ -250,10 +250,6 @@ background: -o-linear-gradient(left, #629788, #629788 33%, grey 32%, grey 66%, b
   .rightSide > ul > li > span.text {
     padding-left: 20px;
   }
-
-  .accomodation-expansion: {
-    flex-direction: row;
-  }
 }
 
 @media only screen and (max-width: 999px) {
